@@ -4,7 +4,7 @@ import treetaggerwrapper
 
 
 def rmv_sw(df, name_col='Eloge'):
-    fr_stop.update({'plus', 'ce', 'cette', 'encore', 'alors'})
+    fr_stop.update({'plus', 'ce', 'cette', 'encore', 'alors', 'qu', "qu'"})
     df['no_sw'] = df[name_col].apply(lambda x : ' '.join([elem for elem in x.split() if (elem not in fr_stop and len(elem)>2)]))
     
 def rmv_punkt(df, name_col = 'no_sw'):

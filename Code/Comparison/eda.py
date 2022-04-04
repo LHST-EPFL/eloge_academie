@@ -108,7 +108,7 @@ def project_back(df, name_col = 'tags', past = ['VER:subi', 'VER:simp', 'VER:ppe
 def past_tense(df, name_col = 'Eloge'):
     add_tags(df, name_col, 'tags')
     project_back(df)
-    df['percent_past'] = df.apply(lambda row : row['verb_past']/(row['other_verb'] + row['verb_past']), axis = 1)
+    df['percent_past'] = df.apply(lambda row : 100*(row['verb_past']/(row['other_verb'] + row['verb_past'])), axis = 1)
     ## TODO DROP OLD COLUMNS
     pst = df.groupby(['Annee']).agg({'percent_past' : 'mean'}).reset_index()
     pst.plot(x = 'Annee', y = 'percent_past', kind = 'bar', figsize = (10,4))
