@@ -5,6 +5,7 @@ from pandas import Series
 from tqdm import tqdm 
 import numpy as np
 import statistics
+import re
 from pre_process import *
 tqdm.pandas()
 
@@ -116,6 +117,21 @@ def past_tense(df, name_col = 'Eloge'):
     return pst
     
 
+def cond_imperative(df, name_col = 'Eloge') :
+    if 'tags' not in df.columns :
+        add_tags(df, name_col, 'tags')
+    df['imp'] = df['tags'].progress_apply(lambda x : sum([1 for elem in x if (len(elem)>1 and elem[1]== 'VER:impe')]))
+    df['cond'] = df['tags'].progress_apply(lambda x : sum([1 for elem in x if (len(elem)>1 and elem[1]== 'VER:cond')]))
+    df['imp'] = df.apply(lambda row : row['imp']/len(row[name_col]), axis = 1)
+    df['cond'] = df.apply(lambda row : row['cond']/len(row[name_col]), axis = 1)
+    pci = df.groupby(['Annee']).agg({'imp' : 'mean', 'cond' : 'mean'}).reset_index()
+    fig, ax = plt.subplots(nrows=2, ncols=1, figsize = (10,8.5))
+    pci.plot(x='Annee', y='imp', kind ='bar', ax = ax[0], title = 'Use of the imperative through the years')
+    pci.plot(x='Annee', y = 'cond', kind = 'bar', ax=ax[1], title = 'Use of the conditionnal throught the years')
+    plt.subplots_adjust(hspace = 0.5)
+    return pci
+                                          
+        
     
 def nbr_eulogies(df, name, name_col = 'Annee', fig_size = (10,4)):
     bins = max(df[name_col])-min(df[name_col])
@@ -201,6 +217,48 @@ def avg_sentence(df, name_col = 'Eloge', evol = False, year = 'Annee'):
         avg_sent.plot('Annee', 'Avg Sent Length', kind = 'bar', figsize = (10,4))
         plt.title('Evolution of the sentence length through the years')
         return avg_sent
+    
+    
+    
+def get_adverbs(text):
+    tags = treetaggerwrapper.make_tags(tagger.tag_text(text))
+    adv = [elem[0] for elem in tags if (len(elem)>1 and elem[1]=='ADV')]
+    return adv
+
+
+def keep_adv(df, name_col):
+    df_help = df.copy()
+    df_help['adverbs'] = df_help[name_col].progress_apply(lambda x : get_adverbs(x))
+    return df_help
+
+def count_adverbs(df, name_col = 'Eloge'):
+    #https://stackoverflow.com/questions/48707117/count-of-elements-in-lists-within-pandas-data-frame
+    df_help = keep_adv(df, name_col)
+    df_help['adverbs'] = df_help['adverbs'].apply(lambda x : [word.lower().strip() for word in x])
+    df_help['adverbs'] = df_help['adverbs'].apply(lambda x : [re.sub(r'[^a-zA-Z]', '', word) for word in x])
+    a = pd.Series([item for sublist in df_help.adverbs for item in sublist])
+    df_ret = a.groupby(a).size().rename_axis('Adverb').reset_index(name='Number')
+    return df_ret
+
+
+def proper_name(df, name_col = 'Eloge', norm = False):
+    if 'tags' not in df.columns:
+        add_tags(df, name_col, 'tags')
+    if norm :   
+        df['p_name'] = df.apply(lambda x : sum([1 for elem in x['tags'] if len(elem)>1 and elem[1]=='NAM'])/(len(x[name_col])), 
+                                axis = 1)
+    else :
+        df['p_name'] = df.apply(lambda x : sum([1 for elem in x['tags'] if len(elem)>1 and elem[1]=='NAM']), axis = 1)
+    p_n = df.groupby('Annee').agg({'p_name' : 'mean'}).reset_index()
+    p_n.plot(x = 'Annee', y = 'p_name', kind = 'bar', figsize = (10,4))
+    if norm :
+        plt.title('Evolution of the use of proper names normed by the number of words per eulogy')
+    else :
+        plt.title('Evolution of the use of proper names')
+    return p_n
+                            
+                               
+    
         
 
     
