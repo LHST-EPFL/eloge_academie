@@ -1,259 +1,259 @@
-Adverb,Number,Categorie
-plus,6312,quantité
-ne,5760,négation
-pas,3356,négation
-n,2038,négation
-encore,1524,temps_quantité_logique
-si,1388,default value
-moins,1287,quantité
-bien,1186,manière
-mme,1085,logique
-peu,1015,quantité
-toujours,952,temps
-point,936,négation
-comme,851,logique
-trop,739,quantité
-alors,728,liaison
-jamais,696,temps
-tout,669,quantité
-presque,662,quantité
-souvent,633,temps
-tant,622,quantité
-trs,585,quantité
-ainsi,568,logique
-peuttre,559,affirmation
-cependant,547,logique
-enfin,545,liaison_temps
-assez,496,quantité
-longtemps,458,temps
-rien,441,négation
-dj,432,temps
-non,431,négation
-surtout,422,affirmation
-beaucoup,419,quantité
-bientt,394,temps
-donc,368,logique
-l,350,lieu
-seulement,336,quantité_logique
-mieux,314,manière
-autant,274,quantité
-prs,272,lieu
-quelquefois,255,temps
-galement,249,liaison
-combien,244,interrogation
-ici,206,lieu
-ensuite,182,liaison
-plutt,181,logique
-loin,181,lieu
-lors,173,temps
-aujourdhui,152,temps
-partout,131,lieu
-fort,126,manière
-comment,121,interrogation
-que,116,interrogation
-auprs,116,lieu
-ci,112,lieu
-heureusement,111,logique
-entirement,109,manière
-successivement,103,manière
-tantt,96,temps
-ailleurs,96,lieu
-personne,94,négation
-absolument,94,affirmation
-aussitt,87,temps
-aprs,86,liaison
-gure,85,négation
-naturellement,81,manière_modal
-davantage,81,quantité
-constamment,80,manière
-aisment,76,manière_modal
-rarement,75,quantité
-mal,73,manière
-audessus,72,lieu
-autour,67,lieu
-principalement,64,affirmation
-tard,63,temps
-pourquoi,63,interrogation
-vraiment,63,affirmation
-parfaitement,63,manière
-uniquement,61,quantité
-vivement,60,manière
-prcisment,59,manière
-malheureusement,56,modal
-autrefois,55,temps
-qu,54,interrogation
-pourtant,51,logique
-particulirement,51,manière
-ncessairement,51,affirmation
-maintenant,50,temps
-promptement,49,temps
-ordinairement,47,manière
-exactement,47,affirmation
-autrement,46,manière
-cher,44,quantité
-purement,43,manière
-dsormais,42,liaison
-voil,42,affirmation
-estdire,41,interrofation
-toutefois,37,logique
-rellement,37,manière
-immdiatement,37,temps
-probablement,35,affirmation
-continuellement,35,temps
-ensemble,35,manière
-facilement,34,manière
-certainement,34,modal
-gnralement,34,affirmation
-fortement,32,manière
-rapidement,32,temps
-puis,31,laison
-volontiers,31,affimration
-directement,30,temps
-vritablement,30,manière_affirmation
-audessous,30,lieu
-infiniment,29,temps
-subitement,29,temps
-tt,29,temps
-srement,28,affirmation
-audel,28,lieu
-publiquement,28,manière
-o,27,lieu
-tellement,27,quantité
-outre,27,liaison
-extrmement,27,manière
-auparavant,27,temps
-hautement,26,lieu
-proprement,26,manière
-rigoureusement,26,manière
-del,25,lieu
-nanmoins,24,liaison
-vite,23,temps
-tranquillement,23,manière
-essentiellement,23,affirmation
-difficilement,22,manière
-rcemment,21,temps
-exclusivement,21,manière
-soigneusement,21,manière
-profondment,21,manière
-vainement,21,manière
-utilement,21,manière
-totalement,21,manière
-mutuellement,21,manière
-rciproquement,20,manière
-indpendamment,20,manière
-sparment,20,manière
-justement,19,manière
-srieusement,19,manière
-apparemment,19,modal
-simplement,17,manière
-dignement,17,manière
-environ,17,quantité
-voici,16,affirmation
-inutilement,15,manière
-nullement,15,négation
-paisiblement,15,manière
-gures,14,négation
-insensiblement,14,manière
-clairement,14,affirmation_modal
-actuellement,13,temps
-effectivement,13,affirmation
-diversement,13,manière
-jadis,13,temps
-pleinement,13,quantité
-puissamment,13,manière
-sagement,12,manière
-cruellement,12,manière
-relativement,12,logique
-lentement,12,manière_temps
-bas,12,lieu
-singulirement,12,manière
-nouvellement,11,temps
-anciennement,11,temps
-suffisamment,11,quantité
-assurment,11,affirmation
-compltement,11,quantité
-scrupuleusement,11,manière
-communment,11,modal
-ouvertement,11,manière
-spcialement,11,modal
-sincrement,10,manière
-unanimement,10,manière_quantité
-sitt,10,temps
-gnreusement,10,manière
-minemment,10,modal
-videmment,10,affirmation
-depuis,10,temps
-ferme,10,manière
-librement,10,manière
-incontestablement,10,affirmation
-court,9,quantité
-haut,9,lieu
-impunment,9,manière
-incessamment,9,temps
-avec,9,logique
-ingalement,9,manière
-vraisemblablement,9,modal
-alternativement,9,logique
-journellement,9,temps
-surlechamp,9,temps
-considrablement,8,quantité
-tendrement,8,manière
-pniblement,8,manière
-personnellement,8,modal_manière
-conformment,8,manière
-sensiblement,8,manière
-frquemment,8,temps
-exprs,8,default value
-fidlement,8,manière
-bon,7,manière
-habilement,7,manière
-certes,7,affirmation_liaison
-rgulirement,7,temps
-solennellement,7,manière
-lgrement,7,manière
-doublement,7,quantité
-vice,7,default value
-soit,7,logique_affirmation
-modestement,7,manière
-volontairement,7,manière
-doucement,7,manière
-expressment,7,manière_temps
-droit,6,default value
-isolment,6,manière
-souverainement,6,manière
-troitement,6,manière
-visvis,6,logique
-secrtement,6,manière
-faiblement,6,manière
-avantageusement,6,manière
-avant,6,temps
-universellement,6,quantité
-parfois,6,temps
-diffremment,6,manière
-mdiocrement,6,manière
-ternellement,6,temps
-noblement,6,manière
-gratuitement,6,manière
-convenablement,6,manière
-infailliblement,6,manière
-simultanment,6,temps
-indfiniment,6,temps
-incomparablement,6,modal
-dessus,6,lieu
-svrement,6,manière
-graduellement,6,manière_temps
-imprudemment,5,manière
-horizontalement,5,manière
-favorablement,5,manière
-prodigieusement,5,manière
-momentanment,5,temps
-obliquement,5,manière
-avidement,5,manière
-libralement,5,manière
-amrement,5,manière
-dangereusement,5,manière
-solidement,5,manière
-intimement,5,manière
-distinctement,5,manière
-dfinitivement,5,temps
-invitablement,5,manière
+Adverb,Number,Categorie,Assertivité
+plus,6312,quantité,default value
+ne,5760,négation,default value
+pas,3356,négation,default value
+n,2038,négation,default value
+encore,1524,temps_quantité_logique,default value
+si,1388,default value,default value
+moins,1287,quantité,default value
+bien,1186,manière,default value
+mme,1085,logique,default value
+peu,1015,quantité,default value
+toujours,952,temps,certain
+point,936,négation,default value
+comme,851,logique,default value
+trop,739,quantité,default value
+alors,728,liaison,default value
+jamais,696,temps,certain
+tout,669,quantité,jsp
+presque,662,quantité,jsp
+souvent,633,temps,presque
+tant,622,quantité,default value
+trs,585,quantité,default value
+ainsi,568,logique,default value
+peuttre,559,affirmation,moitié
+cependant,547,logique,default value
+enfin,545,liaison_temps,default value
+assez,496,quantité,default value
+longtemps,458,temps,jsp
+rien,441,négation,default value
+dj,432,temps,default value
+non,431,négation,default value
+surtout,422,affirmation,jsp
+beaucoup,419,quantité,default value
+bientt,394,temps,default value
+donc,368,logique,default value
+l,350,lieu,default value
+seulement,336,quantité_logique,default value
+mieux,314,manière,default value
+autant,274,quantité,default value
+prs,272,lieu,default value
+quelquefois,255,temps,peu
+galement,249,liaison,default value
+combien,244,interrogation,default value
+ici,206,lieu,default value
+ensuite,182,liaison,default value
+plutt,181,logique,presque
+loin,181,lieu,default value
+lors,173,temps,default value
+aujourdhui,152,temps,default value
+partout,131,lieu,certain
+fort,126,manière,default value
+comment,121,interrogation,default value
+que,116,interrogation,default value
+auprs,116,lieu,default value
+ci,112,lieu,default value
+heureusement,111,logique_modal,default value
+entirement,109,manière,jsp
+successivement,103,manière,default value
+tantt,96,temps,default value
+ailleurs,96,lieu,default value
+personne,94,négation,default value
+absolument,94,affirmation,certain
+aussitt,87,temps,default value
+aprs,86,liaison,default value
+gure,85,négation,default value
+naturellement,81,manière_modal,certain
+davantage,81,quantité,default value
+constamment,80,manière,jsp
+aisment,76,manière_modal,default value
+rarement,75,quantité,jsp
+mal,73,manière,default value
+audessus,72,lieu,default value
+autour,67,lieu,default value
+principalement,64,affirmation,presque
+tard,63,temps,default value
+pourquoi,63,interrogation,default value
+vraiment,63,affirmation,presque
+parfaitement,63,manière,default value
+uniquement,61,quantité,default value
+vivement,60,manière,default value
+prcisment,59,manière,default value
+malheureusement,56,modal,default value
+autrefois,55,temps,default value
+qu,54,interrogation,default value
+pourtant,51,logique,default value
+particulirement,51,manière,default value
+ncessairement,51,affirmation,default value
+maintenant,50,temps,default value
+promptement,49,temps,default value
+ordinairement,47,manière,default value
+exactement,47,affirmation,certain
+autrement,46,manière,default value
+cher,44,quantité,default value
+purement,43,manière,default value
+dsormais,42,liaison,default value
+voil,42,affirmation,default value
+estdire,41,interrofation,default value
+toutefois,37,logique,default value
+rellement,37,manière,default value
+immdiatement,37,temps,default value
+probablement,35,affirmation_modal,presque
+continuellement,35,temps,default value
+ensemble,35,manière,default value
+facilement,34,manière,default value
+certainement,34,modal,certain
+gnralement,34,affirmation,presque
+fortement,32,manière,default value
+rapidement,32,temps,default value
+puis,31,laison,default value
+volontiers,31,affimration,default value
+directement,30,temps,default value
+vritablement,30,manière_affirmation,default value
+audessous,30,lieu,default value
+infiniment,29,temps,default value
+subitement,29,temps,default value
+tt,29,temps,default value
+srement,28,affirmation,presque
+audel,28,lieu,default value
+publiquement,28,manière,default value
+o,27,lieu,default value
+tellement,27,quantité,default value
+outre,27,liaison,default value
+extrmement,27,manière,default value
+auparavant,27,temps,default value
+hautement,26,lieu,default value
+proprement,26,manière,default value
+rigoureusement,26,manière,default value
+del,25,lieu,default value
+nanmoins,24,liaison,default value
+vite,23,temps,default value
+tranquillement,23,manière,default value
+essentiellement,23,affirmation,default value
+difficilement,22,manière,default value
+rcemment,21,temps,default value
+exclusivement,21,manière,default value
+soigneusement,21,manière,default value
+profondment,21,manière,default value
+vainement,21,manière,default value
+utilement,21,manière,default value
+totalement,21,manière,default value
+mutuellement,21,manière,default value
+rciproquement,20,manière,default value
+indpendamment,20,manière,default value
+sparment,20,manière,default value
+justement,19,manière,certain
+srieusement,19,manière,default value
+apparemment,19,modal,presque
+simplement,17,manière,default value
+dignement,17,manière,default value
+environ,17,quantité,presque
+voici,16,affirmation,default value
+inutilement,15,manière,default value
+nullement,15,négation,certain
+paisiblement,15,manière,default value
+gures,14,négation,presque
+insensiblement,14,manière,default value
+clairement,14,affirmation_modal,certain
+actuellement,13,temps,default value
+effectivement,13,affirmation,certain
+diversement,13,manière,default value
+jadis,13,temps,default value
+pleinement,13,quantité,default value
+puissamment,13,manière,default value
+sagement,12,manière,default value
+cruellement,12,manière,default value
+relativement,12,logique,default value
+lentement,12,manière_temps,default value
+bas,12,lieu,default value
+singulirement,12,manière,default value
+nouvellement,11,temps,default value
+anciennement,11,temps,default value
+suffisamment,11,quantité,default value
+assurment,11,affirmation,certain
+compltement,11,quantité,default value
+scrupuleusement,11,manière,default value
+communment,11,modal,default value
+ouvertement,11,manière,default value
+spcialement,11,modal,default value
+sincrement,10,manière,default value
+unanimement,10,manière_quantité,default value
+sitt,10,temps,default value
+gnreusement,10,manière,default value
+minemment,10,modal,default value
+videmment,10,affirmation,certain
+depuis,10,temps,default value
+ferme,10,manière,default value
+librement,10,manière,default value
+incontestablement,10,affirmation,certain
+court,9,quantité,default value
+haut,9,lieu,default value
+impunment,9,manière,default value
+incessamment,9,temps,default value
+avec,9,logique,default value
+ingalement,9,manière,default value
+vraisemblablement,9,modal,presque
+alternativement,9,logique,default value
+journellement,9,temps,default value
+surlechamp,9,temps,default value
+considrablement,8,quantité,default value
+tendrement,8,manière,default value
+pniblement,8,manière,default value
+personnellement,8,modal_manière,default value
+conformment,8,manière,default value
+sensiblement,8,manière,default value
+frquemment,8,temps,presque
+exprs,8,default value,default value
+fidlement,8,manière,default value
+bon,7,manière,default value
+habilement,7,manière,default value
+certes,7,affirmation_liaison,default value
+rgulirement,7,temps,default value
+solennellement,7,manière,default value
+lgrement,7,manière,default value
+doublement,7,quantité,default value
+vice,7,default value,default value
+soit,7,logique_affirmation,default value
+modestement,7,manière,default value
+volontairement,7,manière,default value
+doucement,7,manière,default value
+expressment,7,manière_temps,default value
+droit,6,default value,default value
+isolment,6,manière,default value
+souverainement,6,manière,default value
+troitement,6,manière,default value
+visvis,6,logique,default value
+secrtement,6,manière,default value
+faiblement,6,manière,default value
+avantageusement,6,manière,default value
+avant,6,temps,default value
+universellement,6,quantité,default value
+parfois,6,temps,peu
+diffremment,6,manière,default value
+mdiocrement,6,manière,default value
+ternellement,6,temps,certain
+noblement,6,manière,default value
+gratuitement,6,manière,default value
+convenablement,6,manière,default value
+infailliblement,6,manière,certain
+simultanment,6,temps,default value
+indfiniment,6,temps,default value
+incomparablement,6,modal,default value
+dessus,6,lieu,default value
+svrement,6,manière,default value
+graduellement,6,manière_temps,default value
+imprudemment,5,manière,default value
+horizontalement,5,manière,default value
+favorablement,5,manière,default value
+prodigieusement,5,manière,default value
+momentanment,5,temps,default value
+obliquement,5,manière,default value
+avidement,5,manière,default value
+libralement,5,manière,default value
+amrement,5,manière,default value
+dangereusement,5,manière,default value
+solidement,5,manière,default value
+intimement,5,manière,default value
+distinctement,5,manière,default value
+dfinitivement,5,temps,certain
+invitablement,5,manière,certain
