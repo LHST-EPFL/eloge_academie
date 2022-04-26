@@ -109,7 +109,7 @@ rapidement,32,temps,default value
 puis,31,laison,default value
 volontiers,31,affimration,default value
 directement,30,temps,default value
-vritablement,30,manière_affirmation,default value
+vritablement,30,manière_affirmation,certain
 audessous,30,lieu,default value
 infiniment,29,temps,default value
 subitement,29,temps,default value
@@ -129,7 +129,7 @@ del,25,lieu,default value
 nanmoins,24,liaison,default value
 vite,23,temps,default value
 tranquillement,23,manière,default value
-essentiellement,23,affirmation,default value
+essentiellement,23,affirmation,presque
 difficilement,22,manière,default value
 rcemment,21,temps,default value
 exclusivement,21,manière,default value
@@ -137,7 +137,7 @@ soigneusement,21,manière,default value
 profondment,21,manière,default value
 vainement,21,manière,default value
 utilement,21,manière,default value
-totalement,21,manière,default value
+totalement,21,manière,jsp
 mutuellement,21,manière,default value
 rciproquement,20,manière,default value
 indpendamment,20,manière,default value
@@ -159,7 +159,7 @@ actuellement,13,temps,default value
 effectivement,13,affirmation,certain
 diversement,13,manière,default value
 jadis,13,temps,default value
-pleinement,13,quantité,default value
+pleinement,13,quantité,jsp
 puissamment,13,manière,default value
 sagement,12,manière,default value
 cruellement,12,manière,default value
@@ -171,9 +171,9 @@ nouvellement,11,temps,default value
 anciennement,11,temps,default value
 suffisamment,11,quantité,default value
 assurment,11,affirmation,certain
-compltement,11,quantité,default value
+compltement,11,quantité,jsp
 scrupuleusement,11,manière,default value
-communment,11,modal,default value
+communment,11,modal,jsp
 ouvertement,11,manière,default value
 spcialement,11,modal,default value
 sincrement,10,manière,default value
@@ -189,7 +189,7 @@ incontestablement,10,affirmation,certain
 court,9,quantité,default value
 haut,9,lieu,default value
 impunment,9,manière,default value
-incessamment,9,temps,default value
+incessamment,9,temps,presque
 avec,9,logique,default value
 ingalement,9,manière,default value
 vraisemblablement,9,modal,presque
@@ -198,7 +198,7 @@ journellement,9,temps,default value
 surlechamp,9,temps,default value
 considrablement,8,quantité,default value
 tendrement,8,manière,default value
-pniblement,8,manière,default value
+pniblement,8,manière,peu
 personnellement,8,modal_manière,default value
 conformment,8,manière,default value
 sensiblement,8,manière,default value
@@ -208,7 +208,7 @@ fidlement,8,manière,default value
 bon,7,manière,default value
 habilement,7,manière,default value
 certes,7,affirmation_liaison,default value
-rgulirement,7,temps,default value
+rgulirement,7,temps,presque
 solennellement,7,manière,default value
 lgrement,7,manière,default value
 doublement,7,quantité,default value
@@ -237,14 +237,14 @@ gratuitement,6,manière,default value
 convenablement,6,manière,default value
 infailliblement,6,manière,certain
 simultanment,6,temps,default value
-indfiniment,6,temps,default value
+indfiniment,6,temps,certain
 incomparablement,6,modal,default value
 dessus,6,lieu,default value
 svrement,6,manière,default value
 graduellement,6,manière_temps,default value
 imprudemment,5,manière,default value
 horizontalement,5,manière,default value
-favorablement,5,manière,default value
+favorablement,5,manière,jsp
 prodigieusement,5,manière,default value
 momentanment,5,temps,default value
 obliquement,5,manière,default value
