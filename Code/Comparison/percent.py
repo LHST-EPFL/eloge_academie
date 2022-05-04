@@ -1,4 +1,9 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
 from collections import Counter
+from tqdm import tqdm
+tqdm.pandas()
 
 
 
@@ -60,10 +65,10 @@ def divide_by_percent(ls):
 
 
 def plot_stack_bar(df, name_col = 'Topic_Ordered', date = 1793, color_plot = {'outlier' : 'grey', 'science' : 'red', 'personne' : 'pink', 'societe' : 'orange' ,
-             'posterite' : 'purple', 'voyage' : 'black'}):
+             'posterite' : 'purple', 'voyage' : 'black'}, keep_outliers = False, norm = False, norm_by_tot = False):
     df['Percent'] = df['Topic_Ordered'].apply(lambda x : divide_by_percent(x))
-    df_pre = df[df['Annee']<=1793]
-    df_post = df[df['Annee']> 1793]
+    df_pre = df[df['Annee']<=date]
+    df_post = df[df['Annee']> date]
     
     df_try = pd.concat([df.drop(['Percent'], axis=1), df['Percent'].apply(pd.Series)], axis=1)
     df_try_pre = pd.concat([df_pre.drop(['Percent'], axis=1), df_pre['Percent'].apply(pd.Series)], axis=1)
@@ -79,26 +84,63 @@ def plot_stack_bar(df, name_col = 'Topic_Ordered', date = 1793, color_plot = {'o
     
     
     perc = pd.DataFrame(dic_perc.values())
-    perc.pop('outlier')
-    perc['Percent'] =['0-10', '10-20','20-30', '30-40','40-50', '50-60','60-70', '70-80',
-                                                '80-90', '90-100']
     perc_pre = pd.DataFrame(dic_perc_pre.values())
     perc_post = pd.DataFrame(dic_perc_post.values())
+    
+    if norm :
+        perc.loc[:,:] = perc.loc[:,:].div(perc.sum(axis=1), axis=0)
+        perc_pre.loc[:,:] = perc_pre.loc[:,:].div(perc_pre.sum(axis=1), axis=0)
+        perc_post.loc[:,:] = perc_post.loc[:,:].div(perc_post.sum(axis=1), axis=0)
+        for col in perc.columns:
+            perc[col] = 100*perc[col]
+            perc_pre[col] = 100*perc_pre[col]
+            perc_post[col] = 100*perc_post[col]
+    
+    if not keep_outliers :
+        perc.pop('outlier')
+        perc_pre.pop('outlier')
+        perc_post.pop('outlier')
+        
+             
+    if norm_by_tot :
+        for col in perc.columns:
+            perc[col] = perc[col]/perc[col].sum()
+            perc_pre[col] = perc_pre[col]/perc_pre[col].sum()
+            perc_post[col] = perc_post[col]/perc_post[col].sum()
+
+    
+    perc['Percent'] =['0-10', '10-20','20-30', '30-40','40-50', '50-60','60-70', '70-80',
+                                                '80-90', '90-100']   
     perc_pre['Percent'] =['0-10', '10-20','20-30', '30-40','40-50', '50-60','60-70', '70-80',
                                                 '80-90', '90-100']
     perc_post['Percent'] =['0-10', '10-20','20-30', '30-40','40-50', '50-60','60-70', '70-80',
                                                 '80-90', '90-100']
-
-    perc_pre.pop('outlier')
-    perc_post.pop('outlier')
     
+    
+        
+        
     
     fig, ax = plt.subplots(nrows = 3, figsize = (10, 15))
     perc.plot.bar(x='Percent', stacked=True, title='Proportion of each topic',
-             color = color_plot, ax = ax[0])
+             color = color_plot, ax = ax[0])#, xlabel = 'Proportions', ylabel = 'Percentage in the text')
     perc_pre.plot.bar(x='Percent', stacked=True, title='Proportion of each topic pre Revolution',
-                 color = color_plot, ax = ax[1])
+                 color = color_plot, ax = ax[1])#, xlabel = 'Proportions', ylabel = 'Percentage in the text')
     perc_post.plot.bar(x='Percent', stacked=True, title='Proportion of each topic post Revolution',
-                  color=color_plot, ax = ax[2])
+                  color=color_plot, ax = ax[2])#, xlabel = 'Proportions', ylabel = 'Percentage in the text')
     
     plt.subplots_adjust(hspace = 0.4)
+    handles, labels = ax[0].get_legend_handles_labels()
+    ax[0].get_legend().remove()
+    ax[1].get_legend().remove()
+    ax[2].get_legend().remove()
+    fig.legend(handles, labels, bbox_to_anchor=(1.3, 0.5))
+    return perc, perc_pre, perc_post
+
+
+def sent_rep(topic, df_rep, print_ = True, perc=10):
+    df_help = df_rep[df_rep['Topic']==topic].sample(frac=1).nlargest(n=perc, keep='first', columns = 'Prob')
+    if print_:
+        for _,row in df_help.iterrows():
+            print(row['Eloge'])
+            print('\n')
+    return df_help
