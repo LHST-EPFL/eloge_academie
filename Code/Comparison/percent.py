@@ -6,6 +6,11 @@ from tqdm import tqdm
 tqdm.pandas()
 
 
+def major_topic(topic, ls):
+    for idx, entri in enumerate(ls.items()) :
+        if topic in entri[1] :
+            return idx ,entri[0]
+    return -1, 'outlier'
 
 def rmv_sent(df_try):
     df_try['0-10'] = df_try['0-10'].apply(lambda x : [(key[1], val) for key, val in x.items()])

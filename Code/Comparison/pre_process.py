@@ -27,8 +27,8 @@ def lemmatize(df, name_col, new_name):
     
 def nouns_verbs(df, name_col):
     add_tags(df, name_col, 'n_v')
-    df['n_v'] = df['n_v'].progress_apply(lambda x : ' '.join([elem[2] for elem in x if(elem[1] =='NOM' or elem[1].startswith('VER'))]))
-    #df['n_v'] = df['n_v'].progress_apply(lambda x : ' '.join([word for word in x.split() if ((word not in fr_stop) and (len(word)>2))]))
+    df['n_v'] = df['n_v'].apply(lambda x : ' '.join([elem[2] for elem in x if(elem[1] =='NOM' or elem[1].startswith('VER'))]))
+    #df['n_v'] = df['n_v'].apply(lambda x : ' '.join([word for word in x.split() if ((word not in fr_stop) and (len(word)>2))]))
     
     
     

@@ -95,8 +95,8 @@ def count_fst(string):
     return (100*count_pf)/(count_pf+count_op)
                                             
 def project_back(df, name_col = 'tags', past = ['VER:subi', 'VER:simp', 'VER:pper', 'VER:impf'], print = False):
-    df['verb'] = df[name_col].progress_apply(lambda x : [elem for elem in x if (len(elem)>1 and elem[1].startswith('VER'))])    
-    df['verb_past'] = df['verb'].progress_apply(lambda x : sum([1 for elem in x if (len(elem)>1 and elem[1] in past)]))
+    df['verb'] = df[name_col].apply(lambda x : [elem for elem in x if (len(elem)>1 and elem[1].startswith('VER'))])    
+    df['verb_past'] = df['verb'].apply(lambda x : sum([1 for elem in x if (len(elem)>1 and elem[1] in past)]))
     df['other_verb'] = df['verb'].apply(lambda x : sum([1 for elem in x if (len(elem)>1 and elem[1] not in past)]))
     if print :
         print('Number of verbs in past tense : ' + str(df['verb_past'].sum()))
@@ -120,8 +120,8 @@ def past_tense(df, name_col = 'Eloge'):
 def cond_imperative(df, name_col = 'Eloge') :
     if 'tags' not in df.columns :
         add_tags(df, name_col, 'tags')
-    df['imp'] = df['tags'].progress_apply(lambda x : sum([1 for elem in x if (len(elem)>1 and elem[1]== 'VER:impe')]))
-    df['cond'] = df['tags'].progress_apply(lambda x : sum([1 for elem in x if (len(elem)>1 and elem[1]== 'VER:cond')]))
+    df['imp'] = df['tags'].apply(lambda x : sum([1 for elem in x if (len(elem)>1 and elem[1]== 'VER:impe')]))
+    df['cond'] = df['tags'].apply(lambda x : sum([1 for elem in x if (len(elem)>1 and elem[1]== 'VER:cond')]))
     df['imp'] = df.apply(lambda row : row['imp']/len(row[name_col]), axis = 1)
     df['cond'] = df.apply(lambda row : row['cond']/len(row[name_col]), axis = 1)
     pci = df.groupby(['Annee']).agg({'imp' : 'mean', 'cond' : 'mean'}).reset_index()
@@ -207,10 +207,10 @@ def avg_sentence_len(text):
 def avg_sentence(df, name_col = 'Eloge', evol = False, year = 'Annee'):
     df_help = df.copy()
     if not evol :
-        df_help[name_col].progress_apply(lambda x : avg_sentence_len(x)).hist()
+        df_help[name_col].apply(lambda x : avg_sentence_len(x)).hist()
         plt.title('Average length of the sentences in the eulogies')
     else :
-        df_help['Avg Sent Length'] = df_help['Eloge'].progress_apply(lambda x : avg_sentence_len(x))
+        df_help['Avg Sent Length'] = df_help['Eloge'].apply(lambda x : avg_sentence_len(x))
 
         avg_sent = df_help.groupby(['Annee']).agg({'Avg Sent Length' : 'mean'}).reset_index()
 
@@ -228,7 +228,7 @@ def get_adverbs(text):
 
 def keep_adv(df, name_col):
     df_help = df.copy()
-    df_help['adverbs'] = df_help[name_col].progress_apply(lambda x : get_adverbs(x))
+    df_help['adverbs'] = df_help[name_col].apply(lambda x : get_adverbs(x))
     return df_help
 
 def count_adverbs(df, name_col = 'Eloge'):
