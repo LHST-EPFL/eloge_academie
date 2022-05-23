@@ -30,3 +30,6 @@ def extract_topic_sizes(df):
                      .rename({"Topic": "Topic", "Doc": "Size"}, axis='columns')
                      .sort_values("Size", ascending=False))
     return topic_sizes
+
+
+
