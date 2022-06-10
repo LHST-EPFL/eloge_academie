@@ -1,0 +1,774 @@
+<savant> Vandermonde
+<auteur> Lacepède
+<annee> 1796
+<eloge> Vandermonde, membre de l'Institut national des sciences et des arts, naquit à Paris en 1735. Il employa sa jeunesse à s’instruire ; mais vers l'âge de trente ans il étoit encore bien loin de se croire destiné à instruire les autres à son tour. Le hasard le rapprocha du célèbre Fontaine. Ce géomêtre sexagénaire devina aisément les
+progrès que les mathématiques pourroient devoir un jour
+à Vandermonde ; il crut, pour ainsi dire, voir en lui
+son successeur ; il l’encouragea, l'attira près de lui,
+l'admit dans le secret de ses recherches, de ses calculs,
+de ses inventions : il lui dévoila ces jouissances si vives
+que donnent les spéculations profondes à un esprit élevé
+et attentif, et qui, se mélant aux douceurs du calme
+aux charmes de la retraite et au sentiment des succès,
+deviennent bientôt une sorte de passion aussi heureuse
+que constante.
+À cette époque, Fontaine, qui avoit cru devoir s’occu¬
+per de nouveau des recherches qu’il avoit ajoutées à
+celles de Jean Bernoulli, sur la question, fameuse alors,
+des tautochrones, eut la gloire de n’être vaincu que
+par d’Alembert et par Lagrange. Vandermonde, témoin
+de ce combat nécessairement célèbre, animé par l’hon¬
+neur qu’il voyoit attaché à cette illustre défaite, en¬
+chanté du spectacle de Fontaine que l’amour de la
+géométrie rendoit heureux malgré son âge, comme on
+peut l’être à vingt ans par un sentiment moins paisible,
+crut assurer à jamais son bonheur en se livrant à une
+affection que les glaces de l'âge ne pouvoient éteindre ;
+et pensant devoir préférer à tout une passion qui sur¬
+vivoit à tout, il se consacra à la géométrie.
+	Peu d’années après, il se présenta à l'Académie des
+sciences : il y fut admis en 1771 ; et il voulut justifier
+	les suffrages de ses confrères par le travail qu’il pu¬
+blia sur la résolution des équations.
+	Dès le seizième siècle on connoissoit la méthode de
+résoudre les équations des quatre premiers degrés ; et
+depuis ce temps la théorie générale des équations avoit
+fait de grands progrès. Mais, malgré les efforts récens
+des plus grands géomètres on avoit cherché en vain
+la solution des équations du cinquième degré. Vander¬
+monde voulut réunir ses travaux à ceux d’illustres ana¬
+lystes, et il proposa une théorie nouvelle des équations,
+dans laquelle il paroit s’être particulièrement attaché à
+simplifier les méthodes de calcul, et à diminuer la
+longueur des formules, qu’il regardoit comme l'une
+des plus grandes difficultés du sujet.
+
+	Cet ouvrage fut bientôt suivi d’un autre sur les pro¬
+blèmes appelés, par les géomètres, problèmes de situa¬
+tion. Il semble qu’il ait été dans la destinée de Van¬
+dermonde, ainsi que dans celle de Fontaine, qui lui
+avoit révélé le premier les mystères des sciences ma¬
+thématiques, de travailler souvent sur des sujets déjà
+traités par les plus grands maîtres. Dans son premier
+mémoire, il avoit examiné le même objet que Lagrange
+et Euler ; dans le second, il s’occupe des mêmes pro¬
+blèmes qu’Euler et Leibnitz. Ce dernier étoit persuadé
+que l’analyse employée de son temps par les géomètres
+ne pouvoit pas convenir à toutes les questions des
+sciences naturelles, et que, pour calculer les rapports
+de position de différens corps dans l’espace, il falloit
+pour ainsi dire, inventer une géométrie nouvelle
+qu’il nomma géométrie de situation. Mais, excepté
+une application de cette géométrie nouvelle, faite par
+	Leibniz lui-même au jeu du solitaire et qui
+sous l’apparence d’un objet de curiosité peu digne de
+la sublimité et de l'utilité de la géométrie, est un
+exemple de la manière de résoudre les questions les
+plus élevées et les plus importantes, Euler avoit em¬
+ployé presque seul cette géométrie de situation. Il s’en
+étoit servi pour la solution d’un problème appelé pro¬
+blème du cavalier, également trop familier au premier
+coup-d’œil, mais aussi fécond en applications graves et
+utiles. Ce problème ne consistoit, pour le vulgaire,
+qu’à trouver la manière de faire parcourir au cavalier
+du jeu des échecs toutes les cases de l’échiquier sans
+passer deux fois par la même : mais pour le profond
+géomêtre sa résolution devoit tracer la route que doit
+suivre tout corps dont la marche est soumise à une loi
+connue, pour passer, en se conformant à des conditions
+imposées, par tous les points disposés sur un espace
+dans un ordre déterminé. Vandermonde s’étoit parti¬
+culièrement attaché à trouver, pour cette espèce d’ana¬
+lyse, une notation simple et propre à rendre les calculs
+plus aisés à faire ; et il en donna un exemple dans une
+solution de ce même problème du cavalier, qu’Euler
+avoit rendu célèbre.
+Mais déja son goût pour les hautes conceptions des
+sciences spéculatives s’étoit lié avec celui qu’inspirent
+	les objets immédiatement utiles à la société : aussi, de¬
+sirant de donner un nouveau moyen de perfectionner les
+arts qui s’occupent de tissus, ou dont les productions
+présentent des formes régulières, employa-t-il une grande
+partie de ce second mémoire à indiquer une manière de
+noter les points par lesquels doivent passer les fils des¬
+tinés à former ces tissus ou les lignes qui terminent les
+surfaces des divers corps réguliers.
+Voulant toujours être utile aux sciences mathéma¬
+tiques, il fit imprimer, dès l’année suivante (1772),
+un troisième mémoire dans lequel il chercha à ouvrir
+une nouvelle route aux géomètres, en proposant des irra¬
+tionnelles d’une nouvelle espèce, en montrant les suites
+dont ces irrationnelles sont les termes ou la somme, et
+en indiquant une méthode directe et générale d’y faire
+toutes les réductions possibles.
+
+	Dans la même année parut son travail sur l’élimina¬
+tion des inconnues dans les quantités algébriques. On
+sait que cette élimination est l'art de ramener les équa¬
+tions qui renferment plusieurs inconnues, à des équa¬
+tions qui n’en présentent qu’une. La perfection des re¬
+cherches sur cet art consisteroit à obtenir une formule
+	d’élimination générale et unique sous la forme la plus
+concise et la plus commode, et où le nombre des équa¬
+tions et leurs degrés seroient désignés par des lettres
+indéterminées. Vandermonde, en regardant les géo¬
+mètres comme très éloignés de ce point, entrevit néan¬
+moins quelque possibilité d’y parvenir, et proposa de
+nouveaux moyens d’en approcher.
+	Cependant, malgré son zèle pour les mathématiques,
+Vandermonde ne s’étoit pas uniquement voué à cette
+science. Son ame, facile à émouvoir, devoit accorder
+bien des affections à l’un des beaux arts qui touchent
+avec le plus de force : aussi déroba-t-il plusieurs de ses
+momens à la géométrie pour les donner à la musique.
+	Mais comme il ne pouvoit cesser d’être géomêtre, il ne
+s’occupa pas long-temps de musique sans calculer les
+moyens qu’elle emploie, observer les usages autorisés
+par les grands succès, simplifier ces procédés par l’ana¬
+lyse, comparer les résultats de ces réductions, tirer de
+ces résultats des formules générales, et présenter les
+règles de lart.
+	Dès 1778 il exposa, dans une des séances publiques
+de l’Académie, un nouveau système d’harmonie qu’il
+développa dans une autre séance publique de 1780. Dans
+ce système, Vandermonde rapporte les manières de
+procéder adoptées jusqu’à lui à deux règles principales,
+qui par-là lui paroissent établies sur des effets avoués
+par tous les musiciens. Ces deux règles générales, l’une
+sur la succession des accords, l’autre sur l'arrangement
+des parties, dépendent elles-mêmes d’une loi plus élevée
+qui, selon Vandermonde, doit régir toute l'harmonie.
+Au moment où il publia son ouvrage, il étoit diffi¬
+cile de beaucoup mieux remplir le but qu’il s’étoit pro¬
+posé. Aussi obtint-il l’approbation de trois hommes fa¬
+meux, et, pour ainsi dire, des représentans des trois
+grandes écoles d’Allemagne, de France et d’Italie ; de
+	Gluck, de Philidor et de Piccini (1).
+	C’est de travaux analogues à ceux que nous venons
+d’exposer, d’études variées sur des objets d’économie
+publique, et de fréquentes recherches sur les arts mé¬
+chaniques, pour les progrès desquels on avoit établi le
+dépôt national de machines dont il étoit devenu l'un
+des conservateurs, que Vandermonde étoit occupé, lors¬
+que, vers l'an 3 de la République, une maladie qui
+devoit le conduire au tombeau, attaqua sa poitrine
+éteignit presque entièrement sa voix, et commença à
+se manifester par des symptômes alarmans.
+Bientôt les représentans du peuple cherchèrent, par
+(1) Il étoit réservé à l’un de nos confrères (le citoyen Gossec) de donner
+une base plus solide aux règles de l’harmonie, en découvrant une suite de
+sons que la nature fait entendre à ceux qui savent l’interroger, et dont
+l’exposition intéressera autant les amis des sciences physiques que ceux des
+beaux arts.
+
+un hommage éclatant, à consoler les lettres des pertes
+qu’elles avoient faites ; ils voulurent, par l’établissement
+d’une école normale, rouvrir les sources de l’instruc¬
+tion sur toute l’étendue de la République. Vandermonde
+fut appelé pour y exposer les principes de l’économie
+politique. Son zèle eut à combattre et la briéveté du
+temps pendant lequel il put se préparer à un travail
+qu’il n’avoit pas prévu, et la grandeur du vaisseau dans
+lequel il dut se faire entendre, et la foiblesse de sa voix,
+et le dérangement toujours croissant de sa santé, et la
+courte durée de l’école dont il faisoit partie.
+	Quelque temps après, vous l’admîtes au milieu de
+vous. Malgré les progrès de sa maladie, devenus de jour
+en jour plus effrayans, il venoit de commencer à rem¬
+plir, parmi ses anciens et ses nouveaux confrères, les
+devoirs que vous lui aviez imposés, lorsque la mort le
+	frappa subitement presque dans cette enceinte, le 11
+nivose de cette année ; et ses derniers momens, comme
+une grande partie de sa vie, furent consacrés au culte
+du génie des sciences et des arts bienfaiteurs,
+
+
+
+
+
+<savant> Pingué, Alexandre-Gui
+<auteur> Prony
+<annee> 1796
+<eloge> Alexandre-Gui Pingué naquit à Paris le 4 septembre
+1711. Ses parens l’envoyèrent de très bonne heure dans
+ un collège établi à Senlis par les chanoines-réguliers
+connus sous le nom de génovéfains. L’ardent amour
+pour l’étude, qui pendant soixante-huit ans de travaux
+a été sa seule passion, s’annonça dès ses premiers
+pas dans la carrière des sciences, et mérita la bien¬
+veillance de ses instituteurs. Les progrès du jeune élève
+ne furent pas la seule récompense de leurs leçons : une
+tendre réciprocité de soins paternels d’un côté, de re¬
+connoissance et d’attachement de l’autre, finit par
+enchainer la destinée de Pingré à celle de ses maîtres ;
+il entra dans leur congrégation à lâge de seize ans,
+cédant uniquement à l'impulsion de la sensibilité et à
+la passion d’apprendre. Les corps religieux ont ainsi
+attiré dans leur sein quelques hommes recommandables
+par de riches tributs payés aux sciences et aux lettres :
+il faut même avouer que le recueillement de leur soli¬
+tude pouvoit seul produire ces grands travaux littéraires,
+chefs-d’oeuvre d’une patience infatigable, qui arriveront
+à la postérité comme ces monumens antiques dont la
+masse étonne les regards, et dont la solidité brave les
+effets du temps. C’est un dédommagement d’une partie
+des maux que le monachisme a répandus sur la terre.
+	La théologie, dont les hommes ont fait une science,
+tandis que la nature n’en faisoit qu’un sentiment, s’em¬
+para des premières pensées de Pingré ; il s’y livra sans
+réserve, et avec un tel succès, qu’à vingt-quatre ans il
+fut jugé digne d’en être professeur. Il doit vraisembla¬
+blement à ce premier essor le goût de l'érudition qu’on
+remarque dans plusieurs de ses ouvrages astronomiques :
+mais il faut regretter pour les sciences utiles qu’il ait
+acheté cet avantage par le sacrifice de quatorze années
+de sa vie ; peut-être même la gloire théologique eût
+été le tombeau de son nom, si une de ces crises violentes
+dont le spectacle est quelquefois donné aux hommes
+pour les dégoûter de l'ivresse du fanatisme, ne l’eût
+enfin arraché à sa laborieuse inutilité.
+	On devine aisément que je veux parler de ces scan¬
+daleuses et ridicules querelles dont une bulle trop fa¬
+meuse vint déshonorer le milieu de ce siècle ; lutte
+déplorable de l'erreur contre l'erreur, où toutes les folies
+amenèrent tous les excès, et où le gouvernement, pre¬
+nant parti, mêla quelques mesures de police raison¬
+nables à une foule d’actes d’un despotisme absurde et
+cruel. Pingré se trouva enveloppé dans le parti qu’on
+persécutoit ; et comme si la tyrannie avoit un instinct
+particulier pour découvrir et frapper les talens, il reçut
+en quatre ans cinq lettres de cachet.
+	Destitué de sa chaire, il étoit réduit à des travaux
+obscurs dans des collèges éloignés de Paris, lorsqu’un
+hasard heureux lui fit rencontrer un homme ami de la
+philosophie et des arts, qui, au bienfait de le soustraire
+à l'acharnement de ses persécuteurs, joignit le service
+non moins précieux de diriger son ardeur pour l’étude
+vers des objets plus favorables à son repos et plus
+utiles à la société. Cet homme est le célèbre chirurgien
+	Lecat, auteur de plusieurs ouvrages estimés, et dou¬
+blement recommandable pour avoir arraché une victime
+au fanatisme et pour avoir donné aux sciences un de
+leurs plus zélés prosélytes. Il avoit fondé une académie
+à Rouen ; et croyant appercevoir dans Pingré une
+grande aptitude à devenir astronome, il le fit recevoir
+en cette qualité dans son établissement naissant. Le
+nouvel académicien, sérieusement dégoûté de la car¬
+rière théologique, se livra tout entier à l’astronomie,
+où il dut trouver la vraie théologie des sages et les plus
+belles méditations des hommes religieux.
+	Il avoit alors trente-huit ans ; et c’est à cette époque
+d’où datent ses premiers titres à la mémoire et à la re¬
+connoissance des hommes, que doit commencer l'his¬
+toire de ses travaux. Avant d’en présenter l’ensemble,
+et pour assigner le rang qu’ils occupent parmi ceux-
+qui ont concouru aux progrès de l’astronomie, replions
+un moment notre attention sur les progrès de l’esprit
+humain dans les sciences astronomiques.
+	Les phénomènes célestes n’offroient encore, il y a
+moins de trois siècles ; qu’un assemblage de faits lés
+entre eux par des hypothèses absolument empiriques,
+qui, multipliées à mesure que de nouvelles difficultés
+exigeoient de nouvelles explications, avoient fait de
+	l'astronomie un véritable chaos. Deux cent cinquante¬
+trois ans seulement se sont écoulés depuis que Copernic
+leva une partie du voile qui couvroit les secrets de la
+nature ; mais Kepler, le premier, fit de l’astronomie une
+science vraiment géométrique. Cependant les vérités
+qu’il avoit enseignées n’étoient qu’expérimentales, et il
+pressentit lui-même qu’on pouvoit les lier à un principe
+général, une espèce de puissance de la nature, dont elles
+ne devoient être que le résultat, et où on trouveroit sur¬
+tout le dénouement des difficultés qui embarrassoient
+	leur application.
+Newton, parut, et révéla aux hommes ce mystère su¬
+blime : une simple propriété de la matière fut dans sa
+bouche la proclamation des lois du système du monde.
+	Le flambeau de la vérité étoit placé au milieu du vaste
+édifice des sciences ; il restoit à faire pénétrer la lu¬
+mière dans ses parties les plus secrètes. Les lois de
+Kepler, qui ne supposent que l'action d’une force cen¬
+trale unique, furent les premières conséquences déduites,
+du principe de la gravitation universelle, et elles ne
+laisseroient rien à desirer, dans une hypothèse de cor¬
+respondances isolées, entre un centre d’action immobile
+et les corps qui circulent autour de lui ; mais dès que
+la puissance attractive est commune à toutes les parties
+de la matière, les différentes masses sollicitées par l’at¬
+traction du Soleil le sont aussi par leurs attractions
+réciproques, et une liaison dépendante de la même
+cause doit être conçue dans l’aggrégation des molécules
+qui composent chacune de ces masses en particulier.
+	Ces dernières considérations renferment tout ce que la
+découverte de Newton a ajouté à celles de Kepler, pour
+	l'application du calcul aux phénomènes qu’offre le sys¬
+tème du monde ; elles sont la base de l’explication et
+de la mesure des inégalités et des variations périodiques,
+qui changent sans cesse l’état de ce système, et l’écar¬
+tent ou le rapprochent successivement d’un état moyen
+renfermé entre des limites peu étendues : cependant
+	l'application géométrique du principe de l’attraction à
+ces grands problèmes offroit des difficultés qui n’atten¬
+doient rien moins que les efforts des plus puissans gé¬
+nies ; et l’attraction nevtonienne auroit été à peu près
+inutile aux progrès des sciences physiques, si, d’une
+part, les nouvelles branches de calcul dont on a enrichi
+	l'analyse, et, de l’autre, des méthodes d’observation et
+des instrumens extremement perfectionnés n’eussent
+fourni des secours proportionnés à la grandeur de l’en¬
+treprise. La réunion de ces diverses sources de lumière
+étoit indispensable : car les combinaisons abstraites de
+la géométrie et de l’analyse, qui embrassent toutes les
+hypothèses, n’auroient présenté, séparées des données
+physiques qui devoient les ramener aux cas de la nature,
+que des conceptions stériles, de purs exercices de l'es¬
+prit ; et pour rendre ces données dignes d’être employées
+dans des caleuls rigoureux, il a fallu observer les phé¬
+momènes avec une précision inconnue jusqu’alors,
+	Ainsi le système de l’attraction, préparé par les dé¬
+couvertes de Kepler, Galilée, Descartes et Huygens, a
+été l'occasion ou l’objet de nouvelles découvertes aux¬
+quelles il doit son développement ; et s’il est né du
+progrès des lumières, il leur a payé avec usure le bien¬
+fait de sa naissance par l’essor rapide et brillant qu’il
+	leur a fait prendre.
+	Mais dès lors l’immense étendue de la science astro¬
+nomique a nécessité la division des travaux qui devoient
+concourir à son avancement, et qui se sont répartis
+entre les géomètres particulièrement occupés de la per¬
+fection du calcul intégral, de celle des méthodes ana¬
+lytiques en général, et de leur application aux grands
+problèmes du système du monde, et les observateurs
+voués à la contemplation du ciel, qui les a conduits à
+la mesure de la terre.
+Newton a ouvert la route aux premiers ; et, malgré
+ses nombreuses et sublimes découvertes, il a laissé à
+ses successeurs une riche moisson à cueillir. Clairaut,
+d’Alembert et Euler ont rectifié quelques-unes de ses
+explications, et donné celles de plusieurs phénomènes
+qu’il n’avoit point expliqués. Après eux d’autres géo¬
+mètres que l'Europe et l'Institut ont l’avantage de pos¬
+séder, ont achevé de soumettre l'univers à l'empire de l'attraction.
+Il vest cependant de toute justice de faire partager
+aux observateurs la gloire de cette conquète ; il, faut
+même convenir que nous leur en devons la partie la
+plus pénible. Enchainés jour et nuit aux objets de leurs
+recherches, isolés, pour ainsi dire, du commerce des
+hommes, ils connoissent à peine les douceurs et les dé¬
+lassemens de la société, et ils doivent joindre à la force
+et au courage, qui leur font supporter tant de fatigues
+et de sacrifices, une foule de qualités et de talens dont
+	la réunion est aussi difficile que rare. La longue habitude
+du maniement des instrumens, qu’il faut soigneusement
+entretenir par des exercices journaliers ; une habileté
+particulière à les disposer aux observations et à se ga¬
+rantir des erreurs que leur défaut de division ou de
+construction pourroit occasionner ; un tact et une sagacité
+qui ne peuvent s’acquérir que par une expérience et
+une application soutenues, pour diriger ou combiner les
+observations de la manière la plus favorable au résultat
+qu’on veut obtenir ; l’étude de toutes les parties de la
+géométrie et de l’analyse, indispensable pour l’intelli¬
+gence et l’usage des recherches et des découvertes des ma¬
+thématiciens du premier ordre ; leur application spéciale
+aux problèmes trigonométriques, à laquelle il faut réu¬
+nir une aptitude rare à la pratique des grands calculs,
+et une constance plus rare encore qui fasse surmonter
+leur séchèresse et leur ennui ; enfin la connoissance de
+plusieurs arts et de plusieurs branches des sciences phy¬
+sico-mathématiques : tels sont les principaux élémens
+dont se compose la science et l’art de l'observation en
+astronomie, et il ne faut pas s’étonner si peu d’hommes
+ont pu y aspirer et y parvenir à la supériorité. Aussi
+	le dénombrement des observateurs qui se sont illustrés
+et que la mort nous a enlevés depuis Newton, est-il à
+peu près complet quand on a nommé Flamsteed, Halley,
+	les Cassini, Bradley, Mayer et Lacaille, auxquels je
+réunirai Pingré, que le jugement des savans a depuis
+long-temps placé à côté d’eux,
+	Je reprends le fil de sa vie et de ses travaux.
+Son coup d’essai fut le calcul de l’éclipse de lune du
+23 décembre 1749. Lacaille avoit fait le même caleul
+et obtenu un résultat différent : l'erreur étoit de son
+côté ; il le reconnut, et une amitié réciproque termina
+la dispute.
+	L’observation du passage de Mercure sur le disque
+du Soleil, faite le 6 mai 1753, valut à Pingré le titre
+de correspondant de l’Académie des sciences. Vers cette
+époque, sa réputation, qui s’augmentoit chaque jour,
+décida sa congrégation à l’appeler à Paris, et à finir
+	l'espèce d’exil auquel il étoit condamné. Il s’établit à
+	l'abbaye de Sainte-Geneviève. On lui fit, peu de temps
+après, construire un observatoire dans la même maison,
+où, pendant plus de quarante ans, ses travaux n’ont
+été interrompus que par des voyages entrepris pour le
+progrès des sciences.
+	Dès son arrivée à Paris il avoit fait la connoissance
+de notre respectable confrère Lemonnier, qui, non con¬
+tent des services qu’il rendoit à l’astronomie par ses
+propres ouvrages, recherchoit et encourageoit, avec un
+zèle digne des plus grands éloges, tous ceux qu’il croyoit
+capables de ce distinguer dans cette carrière. Il en avoit
+récemment ouvert l’entrée à notre confrère Lalande ; et
+dès qu’il vit Pingré fixé dans la capitale, il s’empressa de
+lui fournir l'occasion de se faire connoître par un travail
+utile. Il avoit conçu l’idée d’une espèce de calendrier
+astronomique, dont l’objet principal étoit de faciliter aux
+navigateurs la détermination des longitudes par les obser¬
+vations de la Lune. Les calculs immenses qu’exigeoit
+l’exécution d’un pareil projet, auroient effrayé tout autre
+que Pingré : il s’en chargea, publia en 1753 le volume
+de 1754, sous le titre d’Etat du ciel à l'usage de la
+marine, et s’acquit en Europe la réputation d’un cal¬
+culateur aussi exact qu’infatigable. Il a continué les
+années suivantes avec le même succès jusqu’en 1757
+époque à laquelle on n’imprima plus que la Connois¬
+sance des temps, dont le calcul et la rédaction furent
+confiés, en 1760, à Lalande, qui le rendit propre à être
+employé comme almanach nautique.
+	L’Académie des sciences reçut, en 1756, Pingré dans
+son sein. Cet honneur étoit le terme de son ambition
+mais ne fut pas celui de ses travaux. Il n’est presque
+pas un volume de l'Académie, depuis 1753 jusqu’en
+1770, qui ne renferme un ou plusieurs de ses mémoires
+avec les détails d’une immense quantité d’observations
+où les astronomes trouveront une collection utile de
+matériaux, et dont il seroit trop long de faire ici même
+la simple énumération. Aucun phénomène céleste n’é¬
+chappoit à sa vigilance.
+	Un calculateur aussi étonnant devoit trouver dans la
+chronologie des sujets dignes de l'occuper. Cette science
+a ses fondemens naturels dans la connoissance des mou¬
+vemens célestes, dont la régularité, indépendante des
+vicissitudes des événemens humains, offre des phéno¬
+mènes périodiques auxquels on peut attacher les épo¬
+ques contemporaines de l'histoire. Lacaille avoit calculé
+pour le fameux ouvrage de l'Art de vérifier les dates, les
+éclipses de dix-neuf siècles, à compter de l’an 1, vieux
+styte. Pingré, dans une seconde édition, recommença
+tous ces calculs, et y ajouta encore dix siècles avant
+l'ère chréienne. La table qu’il a publiée, et dont la pre¬
+mière partie se trouve dans les Mémotres de l'Aca¬
+démie des inscriptions et belles-lettres, contient, en y
+joignant un petit supplément de Duvaucel, toutes les
+éclipses qui ont eu lieu depuis les premiers temps de
+la république d’Athènes jusqu’à nos jours, et celles
+qu’on pourra observer jusqu’à l’an 208 de la république
+	française.
+	Il sembleroit, d’après l'exposé précédent, que l'ob¬
+servatoire de Pingré devoit être le seul théâtre de
+ses travaux ; mais de nouvelles découvertes en astro¬
+nomie, les progrès de la géographie, ceux de la navi¬
+gation, l’appelèrent à des fatigues d’une autre espèce,
+et Pingré n’hésita point à s’y livrer. Plusieurs voyages
+de long cours qu’il a faits par ordre du gouvernement
+pour ces divers objets, attestent que ni l’amour de la
+tranquillité, l’un des premiers besoins de l'homme très
+occupé, ni la crainte même des dangers, ne pouvoient
+balancer chez lui l’intérêt des sciences. Il est à remar¬
+quer que parmi les savans et les hommes de lettres ce
+genre de force et de courage a spécialement distingué
+	les astronomes, qui comptent parmi eux des victimes
+de leur zèle pour l'avancement de l’astronomie. Ce fut
+un beau spectacle que ce concours des savans euro¬
+péens pour assiéger les derniers retranchemens de la
+nature. Ils allèrent consulter le ciel d’Asie, comme
+autrefois les sages de la Grèce cherchèrent la philoso¬
+phie chez les peuples de l'Orient ; et les mers des Indes
+qui jusqu’alors n’avoient reçu de l'Europe que d’avides
+oppresseurs ou de sanguinaires aventuriers, portèrent
+sans effroi les paisibles conquérans des sciences.
+	Trois voyages de Pingré ont eu pour principal objet
+	l'essai des montres marines de notre confrère Berthoud
+et de celles de Leroy. Le premier fut fait en 1767, sur
+ la corvette l'Aurore, commandée par Courtanvaux, qui¬
+	l'avoit fait construire (1), et armée à ses frais. Pingré en
+a rédigé et publié l’année suivante toute la relation.
+ 	Le second eut lieu en 1768 et 1769, sur la frégate
+	l'Isis, commandée par notre confrère Fleurieu. Pingré en
+a donné les résultats dans le volume de l'Académie de
+1770 ; l'ouvrage intéressant qui contient le journal des
+Horloges marines, et celui de la navigation de l'Isis
+a été publié par Fleurieu en 1773 (2),
+(1) Sur les plans et sous la direction du citoyen Ozanne le jeune, aujour¬
+d’hui ingénieur constructeur de la marine.
+(2) Deux volumes in-4, avec des cartes.
+	Enfin il fit le troisième voyage sur la frégate la Flore;
+cette expédition importante, particulièrement destinée
+aux épreuves comparatives des montres de Berthoud et
+de Leroy, et de plusieurs autres moyens de déterminer
+	les longitudes en mer, étoit confiée à trois commissaires ;
+Verdun, qui commandoit la frégate, notre confrère Borda
+et Pingré : ce dernier eut une très-grande part à la
+rédaction de l'historique du voyage et des expériences ,
+qui parut en 1778.
+	On remarque dans toutes ces productions une variété
+d’observations et de recherches qui, indépendamment
+de l'objet principal, excitent l'intérêt et l’attention par
+	les détails piquans et instructifs qu’elles renferment.
+	On peut ajouter que ce mérite leur est commun avec
+tous les ouvrages des académiciens français qui ont été
+chargés d’opérations lointaines.
+	Le voyage de Pingré sur l'Isis, et celui qu’il avoit
+fait avant sur la corvette l'Aurore coincident avec
+une des plus brillantes époques de l’astronomie mo¬
+derne : je veux parler du passage de Vénus sur le
+disque du Soleil. Il ne sera pas hors de propos, avant
+d’en rendre compte, de donner une idée précise de
+	l'objet d’utilité de cette célèbre observation.
+	La théorie newtonienne, d’accord avec tous les phé¬
+momènes, suffisoit pour connoître exactement et les
+vitesses angulaires des corps qui circulent autour du
+Soleil, et les rapports entre leurs distances respec¬
+tives pour des époques quelconques. Ainsi, en prenant
+la distance de la Terre au Soleil pour unité ou terme
+de comparaison, toutes les proportions de la machine
+planétaire pouvoient s’exprimer en parties de cette unité.
+	Mais quelle étoit sa grandeur absolue ? C’est ce qu’au¬
+cune considération déduite de la gravitation universelle
+ne pouvoit apprendre ; et en concevant une infinité de
+systèmes d’une forme semblable au nôtre, on ne pou¬
+voit savoir quel étoit celui qui avoit précisément les
+mêmes dimensions.
+	Il est vrai que cette ignorance ne faisoit rien perdre
+ni de l’utilité de l’astronomie, ni de la certitude de ses
+calculs, qui dans le fait n’exigent que des connoissances
+de rapports : mais la curiosité active et inquiète de
+l'homme ne se contentoit pas de ces idées de relation;
+il vouloit assigner, dans une portion déterminée de
+	l'espace, les limites de la marche des corps célestes.
+	La nature avoit mis sous notre main une grandeur
+que nous pouvions immédiatement mesurer, c’est celle
+du globe terrestre ; la difficulté consistoit à trouver
+combien de fois un de ses diamètres étoit contenu dans
+la distance entre deux points donnés du système pla¬
+nétaire, tels, par exemple, que les centres de la erre
+et du Soleil.
+	Parmi les moyens qu’on avoit imaginés pour résoudre
+cette question, le meilleur consistoit à profiter de la
+circonstance où l'on rencontreroit un objet intermé¬
+diaire entre la Terre et le Soleil, dont la position fût
+telle, que deux rayons visuels partant de deux points
+différens de la Terre, et passant par cet objet, pus¬
+sent aboutir à deux points différens du disque du Soleil.
+
+Avec cette condition et les diverses données qu’on avoit
+d’ailleurs, on pouvoit, par la géométrie et le calcul,
+trouver le rapport entre la longueur d’un diamêtre ter¬
+restre et la distance de la Terre au Soleil, ou, ce qui
+revient au même, déterminer la parallaxe du Soleil, qui
+est l’angle dont le sommet est au centre de cet astre,
+et dont les côtés passent par les extrémités d’un même
+rayon terrestre.
+	Deux corps du système planétaire étoient propres à
+faire la fonction de l’objet intermédiaire dont je viens
+de parler ; c’étoient Mercure et Vénus : mais Mercure
+étant trop près du Soleil, l’arc sous-tendu sur le disque
+de cet astre auroit été trop petit pour fournir des me¬
+sures exactes ; Vénus, au contraire, à peu près deux
+fois aussi distante du Soleil que de la Terre, lors de
+son passage sur le disque, remplissoit avantageusement
+les conditions demandées, et les astronomes avoient
+fixé leur choix sur cette planête pour l’importante déter¬
+mination de la parallaxe du Soleil.
+Son passage, calculé et prédit d’avance, étoit attendu
+avec l’impatience la plus vive. Par une singularité re¬
+marquable, ce phénomène, qui, à de certaines époques
+se renouvelle deux fois dans l’espace de huit ans, ne re¬
+paroit ensuite qu’après plus d’un siècle. Nos enfans, et
+peut-être quelques personnes de cette assemblée, le
+reverront les années 82 et 90 de la république Fran¬
+çaise, à cent cinq ans de distance des deux derniers
+passages observés en 1761 et 1769, vieux style,
+	Tous les gouvernemens de l’Europe se sont empressés
+de concourir à cette grande opération : la mesure du
+monde planétaire sembloit en être la conquète. Un
+grand nombre de savans se disposèrent à faire en divers
+lieux de la terre des observations correspondantes. Pin¬
+gré partit en 1760 pour l'isle Rodrigue, dans la mer
+des Indes, où il se proposoit d’observer le passage du
+6 juin 1761. Il n’avoit rien négligé pour assurer le succès
+dû à de si grandes fatigues ; mais cette première fois
+son attente et celle de ses coopérateurs furent trompées,
+et le rapprochement des observations laissa de grandes
+incertitudes sur le résultat qu’on cherchoit. Heureuse¬
+ment la nature leur avoit réservé un moyen de vérifi¬
+cation ; et lors du second passage, arrivé le 3 juin 1769,
+	les astronomes, éclairés par l’expérience du premier,
+prirent si bien leurs mesures, qu’on put établir une con¬
+cordance satisfaisante entre leurs observations, d’où
+on a déduit 8".5, à très-peu près, pour la parallaxe
+du Soleil ; ce qui donne pour sa distance à la Terre
+34 751 680 lieues, ou 14 590 250 myriamètres.
+À cette seconde époque Pingré étoit avec Fleurieu
+au cap Français, où ils observèrent le passage ; il a
+ensuite fait un rapprochement de toutes les observa¬
+tions, d’où il a conclu la parallaxe de 8".75. Il est sans
+contredit un de ceux qui ont le plus écrit et travaillé
+pour éclaircir une aussi grande question, et la décou¬
+verte de cette seule vérité physique attacheroit à son
+nom le sceau de l'immortalité.
+	Les travaux dont je viens de rendre compte semblent
+devoir suffire pour remplir la carrière la plus longue
+et la plus laborieuse. Mais que ne peuvent l’enthou¬
+siasmie de la vérité et la passion d’être utile ! ces
+sentimens sublimes doublent l’existence et les forces
+de l'homme qui ne vit que par eux. Je n’ai rien dit
+encore des recherches de Pingré sur les comètes, et ces
+recherches pourroient seules occuper la vie et faire la
+gloire d’un astronome. On sait qu’elles offrent une des
+parties les plus épineuses de la théorie astronomique
+qui a été l'objet des méditations profondes de plusieurs
+géomètres du premier ordre, et que l’application des
+formules aux observations entraine dans des calculs
+dont la longueur et la complication ont de quoi effrayer
+les plus intrépides calculateurs. Une tâché hérissée de
+pareilles difficultés promettoit à Pingré les jouissances
+dont il étoit le plus avide ; il voulut l’embrasser dans
+toute son étendue. Il avoit commencé dès 1757, et il
+continua depuis à s’en occuper avec toute l'ardeur et le
+succès possibles. Lalande ; à qui on peut s’en rapporter
+sur cette matière, pense que Pingré a calculé à lui seul
+plus d’orbites de comètes que tous les autres astronomes
+ensemble pendant le même temps.
+Des recherches et des calculs aussi vastes auroient
+beaucoup perdu à être disséminés dans les collrctions
+académiques : Pingré les a rassemblés en un seul corps
+méthodique, dans un ourvrage très considérable qu’il a
+publié en 1783 ; sous le titre de Cométographie. Il y
+expose avec le plus grand détail tout ce qui a été su et
+pensé des comètes depuis l'antiquité jusqu’à l’époque
+où on a reconnu qu’elles étoient des planètes soumises
+à la gravitation universelle ; il y donne ensuite l'his¬
+toire et l'énumération de toutes celles dont il est fait
+quelque mention dans les écrits des historiens ou des
+philosophes, traite des diverses questions qui leur sont
+relatives, telles que leurs retours, les effets qu’elles
+peuvent produire sur les planêtes, leurs destinations
+les phénomènes et la nature de leur queue et de leur
+chevelure ; enfin il donne la théorie mathématique de
+leurs mouvemens, et fait connoître les solutions trou¬
+vées par Newton, Lagrange, Laplace, et quelques au¬
+tres, des divers problèmes que cette théorie comporte.
+	La publication de la Cométographie devoit être suivie
+d’une Histoire de l’astronomie pendant le dix-septième
+siècle, à laquelle Pingré avoit travaillé dès 1756, à la
+sollicitation de Lemonnier, qui lui avoit communiqué
+les manuscrits de Boulliaud. Après de longues inter¬
+ruptions, l'auteur y mit la dernière main à l'âge de
+quatre-vingts ans. Lalande en rendit compte à l’Aca¬
+démie des sciences en 1791, et l’on doit à son zèle les
+fonds que le gouvernement accorda pour l’impression
+de cet ouvrage, qui en ce moment est très avancée. On
+y trouvera rassemblées et calculées un nombre prodi¬
+gieux d’observations éparses dans les écrits des astro¬
+nomes du dernier siècle.
+	Il me reste à parler de deux productions littéraires
+qui pourroient donner la réputation de savant à celui que
+d’autres ouvrages n’auroient pas fait connoître, mais qui
+n’ont dû être pour Pingré que des objets de délasse¬
+ment. La première est une traduction française du poème
+latin de Manilius sur l'astronomie, dont il se chargea
+à l'invitation de l’Académie des sciences. Manilius, poète
+contemporain de Virgile, a mis en vers, quelquefois
+dignes du poète de Mantoue, ce qu’il a recueilli de
+	l'astronomie ancienne. Il traite de l'origine, de l'ame
+et de l’étendue de l’univers, des étoiles fixes et des
+constellations, de l’influence des astres sur la destinée
+des hommes, et donne une description de la sphère
+moderne des Egyptiens. L’auteur ajoutoit une grande
+foi à l’astrologie.
+	La seconde est encore une traduction d’un poème
+latin, fruit des loisirs de la jeunesse de Cicéron, et qui
+est une imitation du poème grec d’Aratus, intitulé Les
+	Phénomènes. L’ouvrage de l'orateur romain ne nous est
+pas parvenu entier ; mais Hugues Grotius en a rempli
+les lacunes en vers que Cicéron lui-même (suivant l’opi¬
+nion de Pingré ) n’auroit pas désavoués. Aratus, qui
+vivoit il y a environ deux mille ans, mit en vers,
+par
+ordre d’Antigone, surnommé Jonathas, roi de Macé¬
+doine, les ouvrages astronomiques d’Eudoxe. Il traite
+des constellations célestes, de leurs positions respec¬
+tives, de leur éclat plus ou moins grand ; donne quel¬
+ques notions générales sur les cercles de la sphère, parle
+des levers et des couchers des étoiles correspondans aux
+instans où chacun des douze signes paroit sur l'horizon,
+et entre dans plusieurs détails sur l’art des prédictions.
+	Pingré n’a publié que le texte latin des Phéno¬
+mènes, pour s’accommoder à la portée du plus grand
+nombre des lecteurs : il étoit cependant très-versé dans
+ la connoissance de la langue grecque et de plusieurs
+autres langues anciennes et modernes. On a de lui les
+traductions de quelques voyages espagnols. Sa récréa¬
+tion habituelle étoit la lecture des écrivains du siècle
+d’Auguste, et sur-tout celle d’Horace : il y consacroit
+une heure chaque jour. Il avoit aussi donné quelques
+instans à la musique ; mais le délassement où il trou¬
+voit le plus de charmes dans les dernières années de
+sa vie, étoit l’étude de la botanique. Il semble que le
+destin de cette agréable science soit de s’emparer tôt
+ou tard des ames honnètes et tendres, et de leur ofrir
+ou un aliment à leur douce sensibilité, ou un refuge
+et des consolations dans le malheur.
+	Cette variété de connoissances, une égalité et une
+aménité de caractère qui ne se sont jamais démenties
+une piété éclairée et sur-tout tolérante, rendoient le
+commerce de Pingré précieux et cher à tous ceux qui
+	l'approchoient. Ils aimoient à retrouver en lui cette
+ignorance des petites passions de la terre, cette simpli¬
+cité noble et touchante, qui semblent en quelque sorte
+appartenir à ce que j’oserai appeler les moeurs astrono¬
+miques. Jamais savant n’a joui d’une estime et d’une
+considération plus soutenue et plus universelle : on ne
+lui a connu d’autres ennemis que ceux que le fanatisme
+lui avoit jadis suscités ; il a eu l’estime et l’attache¬
+ment de tous les hommes raisonnables qui ont pu le voir
+et l’apprécier.
+	Il fut profondément affligé du coup fatal qui, en dé¬
+truisant les sociétés savantes, sembloit être le présage
+de l’anéantissement total des lumières et de la socia¬
+blité : il a pu être témoin de leur renaissance, et se
+retrouver au milieu de ses compagnons et de ses disci¬
+ples. Nous l'avons vu, à quatre-vingt-quatre ans, assidu
+aux séances de l'Institut, malgré la rigueur des saisons 
+ses cheveux d’une extrême blancheur, le caractère de
+candeur et de modestie répandu dans tous ses traits,
+inspiroient un respect mélé d’attendrissement. Ce véné¬
+rable vieillard, ce patriarche de l’astronomie, entouré
+des savans et des hommes de lettres qu’il avoit presque
+tous vu naître offroit l'image touchante d’un père
+chéri rendu à une famille qui se réunit après avoir été
+dispersée par de longues calamités.
+	Mais, au milieu de ce spectacle si propre à l’émou¬
+voir, ses yeux inquiets ont vainement cherché ce savant
+distingué, cet émule, cet ami, dont la plume non moins
+profonde et plus éloquente encore que la sienne traça
+	l'histoire de l’astronomie de tous les âges. O illustre et
+mille fois infortuné Bailly, tes vertus et ton courage
+ouvrirent les grandes destinées de la France, et, pour
+prix de ce bienfait, un fer homicide, dirigé par des
+mains atrocement cruelles, a tranché le fil de tes jours.
+Reçois l'hommage de nos douleurs et de nos regrets
+éternels ! Puissent les douces images des lois qui ont
+repris leur empire, des sciences et des lettres qui ont
+recouvré leur splendeur, appaiser ton ombre sanglante !
+puisse leur influence protectrice préserver à jamais notre
+patrie de voir encore son sein déchiré par des monstres
+pareils à ceux qui furent tes assassins !
+	Pingré assista à la séance de l'Institut du 6 floréal
+dernier ; le lendemain il éprouva une grande foiblesse
+cinq jours après il avoit cessé de vivre : il étoit âgé
+de quatre-vingt-quatre ans sept mois et vingt-six jours.
+	Sa douceur, sa tranquillité, et sa présence d’esprit, l’ont
+suivi jusques dans ses derniers instans. Il répondit à
+un de ses amis qui s’informoit de sa souffrance : "Je
+ ne souffre point, mais je sens que je me meurs".
+Son philosophe favori, Horace, étoit encore présent à
+sa mémoire ; il en cita des passages. Sa longue car¬
+rière, après lui avoir permis de faire aux hommes tout
+	le bien qu’ils pouvoient attendre de lui, l'a conduit
+près des dernières limites que la nature assigne à notre
+existence ; mais l’amitié, qui ne calcule de temps que
+celui de l’absence, n’en ira pas moins sur sa tombe
+payer un tribut de larmes à son souvenir.

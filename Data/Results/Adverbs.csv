@@ -1,4 +1,4 @@
-Adverb,Number,Categorie,Assertivité,Temporalité,Expérience
+Adverb,Number,Categorie,Assertivité,Temporalité,Expérience,Description
 plus,5933,quantité,default value,default value,default value
 ne,5339,négation,default value,default value,default value
 pas,3139,négation,default value,default value,default value
@@ -65,7 +65,7 @@ davantage,81,quantité,default value,default value,default value
 après,77,liaison,default value,suite,default value
 aussitôt,76,temps,default value,tot,default value
 audessus,74,lieu,default value,default value,default value
-aisément,73,manière_modal,default value,default value,default value
+aisément,73,manière_modal,default value,default value,plus
 absolument,73,affirmation,certain,default value,default value
 constamment,71,manière,default value,maintenant,default value
 rarement,70,quantité,default value,peu,default value
@@ -89,7 +89,7 @@ pourtant,45,logique,default value,default value,default value
 autrement,44,manière,default value,default value,default value
 toutefois,44,logique,default value,default value,default value
 cestàdire,43,interrofation,default value,default value,default value
-purement,41,manière,default value,default value,default value
+purement,41,manière,default value,default value,plus
 cher,40,quantité,default value,default value,default value
 particulièrement,39,manière,default value,default value,default value
 probablement,38,affirmation_modal,presque,default value,default value
@@ -113,7 +113,7 @@ tellement,29,quantité,default value,default value,default value
 néanmoins,27,liaison,default value,default value,default value
 directement,27,temps,default value,default value,default value
 véritablement,27,manière_affirmation,certain,default value,default value
-rigoureusement,27,manière,default value,default value,default value
+rigoureusement,27,manière,default value,default value,plus
 où,26,lieu,default value,default value,default value
 puis,26,liaison,default value,suite,default value
 hautement,26,lieu,default value,default value,default value
@@ -125,22 +125,22 @@ delà,24,lieu,default value,default value,default value
 essentiellement,24,affirmation,presque,default value,default value
 publiquement,23,manière,default value,default value,default value
 tranquillement,23,manière,default value,default value,default value
-proprement,23,manière,default value,default value,default value
+proprement,23,manière,default value,default value,plus
 outre,22,liaison,default value,default value,default value
 exclusivement,21,manière,default value,default value,default value
-vainement,21,manière,default value,default value,default value
+vainement,21,manière,default value,default value,moins
 ordinairement,20,manière,default value,default value,default value
-difficilement,20,manière,default value,default value,default value
+difficilement,20,manière,default value,default value,moins
 récemment,20,temps,default value,passe,default value
 volontiers,19,affirmation,default value,default value,default value
 mutuellement,18,manière,default value,default value,default value
 infiniment,18,temps,default value,eternel,default value
 simplement,18,manière,default value,default value,default value
 séparément,18,manière,default value,default value,default value
-sérieusement,17,manière,default value,default value,default value
-justement,17,manière,certain,default value,default value
+sérieusement,17,manière,default value,default value,plus
+justement,17,manière,certain,default value,plus
 sûrement,17,affirmation,presque,default value,default value
-soigneusement,17,manière,default value,default value,default value
+soigneusement,17,manière,default value,default value,plus
 puissamment,16,manière,default value,default value,plus
 singulièrement,16,manière,default value,default value,default value
 réciproquement,15,manière,default value,default value,default value
@@ -158,77 +158,77 @@ assurément,13,affirmation,certain,default value,default value
 cruellement,12,manière,default value,default value,moins
 inutilement,12,manière,default value,default value,moins
 nouvellement,12,temps,default value,tot,default value
-diversement,12,manière,default value,default value,default value
-extrêmement,12,manière,default value,default value,default value
+diversement,12,manière,default value,default value,default value,description
+extrêmement,12,manière,default value,default value,default value,description
 utilement,12,manière,default value,default value,plus
 insensiblement,12,manière,default value,default value,moins
 suffisamment,12,quantité,default value,default value,plus
 guères,12,négation,presque,default value,default value
 lentement,11,manière_temps,default value,tard,default value
-indépendamment,11,manière,default value,default value,default value
+indépendamment,11,manière,default value,default value,default value,description
 complètement,11,quantité,tout,default value,default value
 spécialement,11,modal,default value,default value,default value
 évidemment,11,affirmation,certain,default value,default value
-incontestablement,10,affirmation,certain,default value,default value
+incontestablement,10,affirmation,certain,default value,plus
 dignement,10,manière,default value,default value,plus
 communément,10,modal,presque,default value,default value
 éminemment,10,modal,default value,default value,default value
 scrupuleusement,10,manière,default value,default value,plus
 surlechamp,9,temps,default value,tot,default value
 inégalement,9,manière,default value,default value,moins
-librement,9,manière,default value,default value,default value
+librement,9,manière,default value,default value,default value,plus
 sitôt,9,temps,default value,tot,default value
-haut,9,lieu,default value,default value,default value
-ferme,9,manière,default value,default value,default value
+haut,9,lieu,default value,default value,default value,description
+ferme,9,manière,default value,default value,default value,description
 alternativement,9,logique,default value,default value,default value
 péniblement,9,manière,default value,default value,moins
 depuis,9,temps,default value,suite,default value
 unanimement,9,manière_quantité,default value,default value,default value
-court,9,quantité,default value,default value,default value
+court,9,quantité,default value,default value,default value,description
 avec,9,logique,default value,default value,default value
 pleinement,9,quantité,tout,default value,default value
 volontairement,8,manière,default value,default value,default value
 sincèrement,8,manière,default value,default value,plus
-nettement,8,manière,default value,default value,default value
-gratuitement,8,manière,default value,default value,default value
-sensiblement,8,manière,default value,default value,default value
-journellement,8,temps,default value,default value,default value
+nettement,8,manière,default value,default value,default value,description
+gratuitement,8,manière,default value,default value,default value,description
+sensiblement,8,manière,default value,default value,plus
+journellement,8,temps,default value,fréquence,default value
 tendrement,8,manière,default value,default value,plus
 visàvis,8,logique,default value,default value,default value
-modestement,7,manière,default value,default value,default value
+modestement,7,manière,default value,default value,plus
 impunément,7,manière,default value,default value,moins
 incessamment,7,temps,default value,tot,default value
 exprès,7,manière,default value,default value,default value
 nullement,7,négation,certain,default value,default value
-pardessus,7,manière_lieu,default value,default value,default value
-doublement,7,quantité,default value,default value,default value
+pardessus,7,manière_lieu,default value,default value,default value,description
+doublement,7,quantité,default value,default value,default value,description
 faiblement,7,manière,default value,default value,moins
 certes,7,affirmation_liaison,default value,default value,default value
 vraisemblablement,7,modal,presque,default value,default value
 soit,7,logique_affirmation,default value,default value,default value
-solennellement,7,manière,default value,default value,default value
+solennellement,7,manière,default value,default value,plus
 sagement,6,manière,default value,default value,plus
 momentanément,6,temps,default value,tot,default value
-étroitement,6,manière,default value,default value,default value
+étroitement,6,manière,default value,default value,default value,description
 annuellement,6,temps,default value,fréquence,default value
-dessus,6,lieu,default value,default value,default value
-isolément,6,manière,default value,default value,default value
+dessus,6,lieu,default value,default value,default value,description
+isolément,6,manière,default value,default value,default value,description
 simultanément,6,temps,default value,tot,default value
 légèrement,6,manière,default value,default value,default value
 avidement,6,manière,default value,default value,moins
-bon,6,manière,default value,default value,default value
+bon,6,manière,default value,default value,plus
 prodigieusement,6,manière,default value,default value,plus
 noblement,6,manière,default value,default value,plus
 convenablement,6,manière,default value,default value,plus
-considérablement,6,quantité,default value,default value,default value
+considérablement,6,quantité,default value,default value,default value,description
 vice,6,manière,default value,default value,default value
 généreusement,6,manière,default value,default value,plus
 imprudemment,6,manière,default value,default value,moins
 droit,6,manière,default value,default value,default value
 parfois,6,temps,default value,peu,default value
-horizontalement,6,manière,default value,default value,default value
+horizontalement,6,manière,default value,default value,default value,description
 expressément,6,manière_temps,default value,tot,default value
-ouvertement,6,manière,default value,default value,default value
+ouvertement,6,manière,default value,default value,default value,description
 habilement,6,manière,default value,default value,plus
 fidèlement,6,manière,default value,default value,plus
 incomparablement,6,modal,default value,default value,plus
@@ -240,15 +240,15 @@ positivement,5,manière_modal,default value,default value,plus
 avant,5,temps,default value,passe,default value
 régulirement,5,temps,default value,fréquence,default value
 favorablement,5,manière,default value,default value,plus
-proportionnellement,5,manière,default value,default value,default value
+proportionnellement,5,manière,default value,default value,default value,description
 violemment,5,manière,default value,default value,moins
 éternellement,5,temps,default value,eternel,default value
 avantageusement,5,manière,default value,default value,plus
 doucement,5,manière,default value,default value,plus
 conformément,5,manière,default value,default value,plus
 légitimement,5,manière,default value,default value,plus
-différemment,5,manière,default value,default value,default value
-distinctement,5,manière,default value,default value,default value
+différemment,5,manière,default value,default value,default value,description
+distinctement,5,manière,default value,default value,default value,description
 franchement,5,manière,default value,default value,default value
 amèrement,5,manière,default value,default value,moins
 debout,5,manière,default value,default value,default value

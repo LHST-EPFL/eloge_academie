@@ -1,6 +1,6 @@
-Adverb,Number_x,Categorie,Assertivité,Temporalité,Expérience,Description
--ci,74,default value,default value,default value,default value,description
--ci ne,5,default value,default value,default value,default value,description
+Adverb,Number,Categorie,Assertivité,Temporalité,Expérience,Description
+-ci,74,default value,default value,default value,default value,default value
+-ci ne,5,default value,default value,default value,default value,default value
 absolument,54,affirmation,certain,default value,default value,default value
 ailleurs,91,lieu,default value,default value,default value,default value
 ainsi,564,logique,default value,default value,default value,default value
@@ -25,7 +25,7 @@ aujourd'hui,138,temps,default value,maintenant,default value,default value
 auparavant,21,temps,default value,passe,default value,default value
 auprès,91,lieu,default value,default value,default value,default value
 aussi,813,liaison,default value,default value,default value,default value
-aussi bien,21,default value,default value,default value,default value,default value
+aussi bien,21,default value,default value,default value,plus,default value
 aussi longtemps,7,temps,default value,passe,default value,default value
 aussi ne,13,default value,default value,default value,default value,default value
 aussi plus,5,default value,default value,default value,default value,default value
@@ -122,11 +122,11 @@ environ,14,quantité,presque,default value,default value,default value
 essentiellement,22,affirmation,presque,default value,default value,default value
 est-à-dire,42,default value,default value,default value,default value,default value
 exactement,25,affirmation,certain,default value,default value,default value
-exclusivement,13,manière,default value,default value,default value,default value
+exclusivement,13,manière,certain,default value,default value,default value
 expressément,5,manière_temps,default value,tot,default value,default value
 exprès,5,manière,default value,default value,default value,default value
 extrêmement,9,manière,default value,default value,default value,description
-facilement,15,manière,default value,default value,default value,default value
+facilement,15,manière,default value,default value,plus,default value
 ferme,9,manière,default value,default value,default value,description
 fidèlement,5,manière,default value,default value,plus,default value
 fort,73,manière,default value,default value,plus,default value
@@ -138,7 +138,7 @@ guère moins,6,default value,default value,default value,default value,default v
 guères,8,négation,presque,default value,default value,default value
 généralement,14,affirmation,presque,default value,default value,default value
 généreusement,5,manière,default value,default value,plus,default value
-hautement,24,lieu,default value,default value,default value,default value
+hautement,24,lieu,default value,default value,default value,description
 heureusement,90,logique_modal,default value,default value,plus,default value
 horizontalement,5,manière,default value,default value,default value,description
 ici,134,lieu,default value,default value,default value,default value
@@ -163,7 +163,7 @@ jamais rien,7,default value,default value,eternel,default value,default value
 journellement,8,temps,default value,fréquence,default value,default value
 justement,10,manière,certain,default value,plus,default value
 lentement,9,manière_temps,default value,tard,default value,default value
-librement,8,manière,default value,default value,default value,plus
+librement,8,manière,default value,default value,plus,default value
 loin,106,lieu,default value,default value,default value,default value
 longtemps,333,temps,default value,presque,default value,default value
 lors,151,temps,default value,default value,default value,default value
@@ -181,8 +181,8 @@ moins,902,quantité,default value,default value,default value,default value
 moins autant,6,default value,default value,default value,default value,default value
 moins encore,9,default value,default value,default value,default value,default value
 moins ne,7,default value,default value,default value,default value,default value
-momentanément,6,temps,default value,tot,default value,default value
-mutuellement,18,manière,default value,default value,default value,default value
+momentanément,6,temps,default value,maintenant,default value,default value
+mutuellement,18,manière,default value,default value,default value,description
 même,812,logique,default value,default value,default value,default value
 même alors,6,default value,default value,default value,default value,default value
 même encore,5,default value,default value,default value,default value,default value
@@ -198,7 +198,7 @@ ne plus,20,default value,default value,default value,default value,default value
 ne point,34,default value,default value,default value,default value,default value
 ne puis,9,default value,default value,default value,default value,default value
 ne rien,10,default value,default value,default value,default value,default value
-nettement,7,manière,default value,default value,default value,description
+nettement,7,manière,certain,default value,default value,description
 noblement,6,manière,default value,default value,plus,default value
 non,221,négation,default value,default value,default value,default value
 non comme,5,default value,default value,default value,default value,default value
@@ -210,7 +210,7 @@ nouvellement,12,temps,default value,tot,default value,default value
 nullement,7,négation,certain,default value,default value,default value
 néanmoins,27,liaison,default value,default value,default value,default value
 nécessairement,41,affirmation,default value,default value,default value,default value
-ordinairement,19,manière,default value,default value,default value,default value
+ordinairement,19,manière,presque,presque,default value,default value
 outre,20,liaison,default value,default value,default value,default value
 ouvertement,6,manière,default value,default value,default value,description
 où,20,lieu,default value,default value,default value,default value
@@ -228,7 +228,7 @@ pas autant,5,default value,default value,default value,default value,default val
 pas bien,10,default value,default value,default value,moins,default value
 pas comme,6,default value,default value,default value,default value,default value
 pas davantage,10,default value,default value,default value,default value,default value
-pas encore,79,default value,default value,default value,default value,default value
+pas encore,79,default value,default value,suite,default value,default value
 pas ici,15,default value,default value,default value,default value,default value
 pas longtemps,7,default value,default value,peu,default value,default value
 pas moins,121,default value,default value,default value,default value,default value
@@ -238,7 +238,7 @@ pas plus,38,default value,default value,default value,default value,default valu
 pas seulement,42,default value,default value,default value,default value,default value
 pas si,13,default value,default value,default value,default value,default value
 pas toujours,58,default value,default value,presque,default value,default value
-pas tout,7,default value,default value,default value,default value,default value
+pas tout,7,default value,peu,default value,default value,default value
 pas trop,12,default value,default value,default value,default value,default value
 pas également,8,default value,default value,default value,default value,default value
 personne,31,négation,default value,default value,default value,default value
@@ -281,7 +281,7 @@ plutôt,140,logique,presque,default value,default value,default value
 point,790,négation,default value,default value,default value,default value
 point alors,6,default value,default value,default value,default value,default value
 point assez,5,default value,default value,default value,moins,default value
-point encore,31,default value,default value,default value,default value,default value
+point encore,31,default value,default value,suite,default value,default value
 point ici,7,default value,default value,default value,default value,default value
 positivement,5,manière_modal,default value,default value,plus,default value
 pourquoi,40,interrogation,default value,default value,default value,default value
@@ -295,11 +295,11 @@ presque autant,7,default value,default value,default value,default value,default
 presque entièrement,12,default value,default value,default value,default value,default value
 presque jamais,17,default value,default value,presque,default value,default value
 presque partout,9,default value,default value,default value,default value,default value
-presque pas,6,default value,default value,presque,default value,default value
+presque pas,6,default value,presque,default value,default value,default value
 presque rien,11,default value,default value,default value,default value,default value
 presque toujours,72,default value,default value,presque,default value,default value
 presque tout,7,default value,default value,default value,default value,default value
-presque uniquement,8,default value,default value,default value,default value,default value
+presque uniquement,8,default value,default value,peu,default value,default value
 principalement,59,affirmation,presque,default value,default value,default value
 probablement,25,affirmation_modal,presque,default value,default value,default value
 probablement pas,5,default value,peu,default value,default value,default value
@@ -326,9 +326,9 @@ rien moins,8,default value,default value,default value,default value,default val
 rien ne,59,default value,default value,default value,default value,default value
 rigoureusement,21,manière,default value,default value,plus,default value
 récemment,14,temps,default value,passe,default value,default value
-réciproquement,14,manière,default value,default value,default value,default value
+réciproquement,14,manière,default value,default value,default value,description
 réellement,28,default value,default value,default value,default value,default value
-régulièrement,5,default value,default value,default value,default value,default value
+régulièrement,5,default value,default value,fréquence,default value,default value
 sagement,5,manière,default value,default value,plus,default value
 scrupuleusement,7,manière,default value,default value,plus,default value
 seulement,186,quantité_logique,default value,default value,default value,default value
@@ -340,29 +340,29 @@ si loin,5,default value,default value,default value,default value,default value
 si longtemps,28,default value,default value,presque,default value,default value
 si peu,35,default value,default value,default value,default value,default value
 si près,6,default value,default value,default value,default value,default value
-si puissamment,5,default value,default value,default value,default value,default value
+si puissamment,5,default value,default value,default value,plus,default value
 si rarement,8,default value,default value,peu,default value,default value
-si souvent,30,default value,default value,presque,default value,default value
+si souvent,30,default value,presque,presque,default value,default value
 si vite,6,default value,default value,tot,default value,default value
 simplement,11,manière,default value,default value,default value,default value
-simultanément,6,temps,default value,default value,default value,default value
+simultanément,6,temps,default value,maintenant,default value,default value
 sincèrement,6,manière,default value,default value,plus,default value
 singulièrement,14,manière,default value,default value,default value,default value
 sitôt,9,temps,default value,tot,default value,default value
 soigneusement,15,manière,default value,default value,plus,default value
 solennellement,7,manière,default value,default value,plus,default value
 souvent,387,temps,presque,presque,default value,default value
-souvent même,14,default value,default value,default value,default value,default value
-souvent plus,5,default value,default value,default value,default value,default value
-souvent si,6,default value,default value,default value,default value,default value
-spécialement,9,modal,default value,default value,default value,default value
+souvent même,14,presque,presque,default value,default value,default value
+souvent plus,5,presque,presque,default value,default value,default value
+souvent si,6,presque,presque,default value,default value,default value
+spécialement,9,modal,default value,default value,default value,description
 subitement,27,temps,default value,tot,default value,default value
 successivement,95,manière,default value,suite,default value,default value
 suffisamment,7,quantité,default value,default value,plus,default value
-sur-le-champ,9,default value,default value,default value,default value,default value
+sur-le-champ,9,default value,default value,maintenant,default value,default value
 surtout,369,affirmation,certain,default value,default value,default value
 surtout plus,5,default value,certain,default value,default value,default value
-séparément,18,manière,default value,default value,default value,default value
+séparément,18,manière,default value,default value,default value,description
 sérieusement,14,manière,default value,default value,plus,default value
 sûrement,7,affirmation,presque,default value,default value,default value
 tant,542,quantité,default value,default value,default value,default value
@@ -373,44 +373,44 @@ tellement,28,quantité,default value,default value,default value,default value
 tendrement,6,manière,default value,default value,plus,default value
 totalement,14,manière,tout,default value,default value,default value
 toujours,631,temps,certain,eternel,default value,default value
-toujours plus,9,default value,default value,eternel,default value,default value
-toujours si,7,default value,default value,eternel,default value,default value
-toujours très,6,default value,default value,eternel,default value,default value
+toujours plus,9,default value,certain,eternel,default value,default value
+toujours si,7,default value,certain,eternel,default value,default value
+toujours très,6,default value,certain,eternel,default value,default value
 tout,537,quantité,tout,default value,default value,default value
 tout aussi,14,default value,default value,default value,default value,default value
 tout bien,5,default value,default value,default value,default value,default value
-tout récemment,5,default value,default value,default value,default value,default value
+tout récemment,5,default value,default value,passe,default value,default value
 toutefois,42,logique,default value,default value,default value,default value
-tranquillement,22,manière,default value,default value,default value,default value
+tranquillement,22,manière,default value,default value,plus,default value
 trop,443,quantité,default value,default value,default value,default value
-trop bien,9,default value,default value,default value,default value,default value
+trop bien,9,default value,default value,default value,moins,default value
 trop facilement,6,default value,default value,default value,moins,default value
 trop loin,5,default value,default value,default value,moins,default value
 trop longtemps,10,default value,default value,default value,moins,default value
 trop peu,27,default value,default value,default value,moins,default value
 trop souvent,46,default value,default value,default value,moins,default value
 trop tard,6,default value,default value,default value,moins,default value
-trop tôt,11,default value,default value,default value,moins,default value
+trop tôt,11,default value,default value,tot,default value,default value
 très,439,quantité,default value,default value,default value,default value
 très bien,10,default value,default value,default value,plus,default value
 très peu,29,default value,default value,default value,default value,default value
 tôt,7,temps,default value,tot,default value,default value
-unanimement,8,manière_quantité,default value,default value,default value,default value
+unanimement,8,manière_quantité,default value,default value,default value,description
 uniquement,48,quantité,default value,default value,default value,default value
 utilement,9,manière,default value,default value,plus,default value
 vainement,20,manière,default value,default value,moins,default value
 vice,5,manière,default value,default value,default value,default value
 vis-à-vis,8,default value,default value,default value,default value,default value
 vite,9,temps,default value,tot,default value,default value
-vivement,42,manière,default value,default value,default value,default value
+vivement,42,manière,default value,tot,default value,default value
 voici,12,affirmation,default value,default value,default value,default value
 voilà,31,affirmation,default value,default value,default value,default value
-volontairement,7,manière,default value,default value,default value,default value
+volontairement,7,manière,default value,default value,plus,default value
 volontiers,13,affirmation,default value,default value,default value,default value
 vraiment,59,affirmation,presque,default value,default value,default value
 vraisemblablement,7,modal,presque,default value,default value,default value
 véritablement,25,manière_affirmation,certain,default value,default value,default value
-également,205,liaison,default value,default value,default value,default value
+également,205,liaison,default value,default value,default value,description
 éminemment,9,modal,default value,default value,default value,default value
 éternellement,5,temps,default value,eternel,default value,default value
 étroitement,5,manière,default value,default value,default value,description
