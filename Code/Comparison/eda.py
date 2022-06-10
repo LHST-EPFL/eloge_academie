@@ -101,10 +101,10 @@ def self_disclosure(df, name_col = 'Eloge'):
     plt.figure(figsize =(10,6))
     plt.xticks(rotation=90)
     plt.bar(count_plot.keys(), count_plot.values(), color='g')
-    plt.title('Most appearing pronouns')
+    plt.title('Pronoms apparaissant le plus souvent')
     
 
-def first_person(df, name_col = 'Eloge'):
+def first_person(df, years_not, name_col = 'Eloge'):
     '''
     This method aims at plotting the evolution of the use of first-person pronouns
     Inputs:
@@ -113,9 +113,13 @@ def first_person(df, name_col = 'Eloge'):
     '''
     df['First_Person'] = df[name_col].apply(lambda x : count_fst(x))
     fst_pers = df.groupby('Annee').agg({'First_Person' : 'mean'}).reset_index()
-    fst_pers.plot(x = 'Annee', y = 'First_Person', kind = 'bar', figsize = (10,4))
-    plt.xlabel('Year')
-    plt.title('Evolution of the use of the first person in the eulogies on all pronouns')
+    for year in years_not :
+        fst_pers = fst_pers.append({'Annee' : year, 'First_Person' : 0}, ignore_index=True)
+    fst_pers.sort_values(by='Annee', inplace=True)
+    fst_pers.plot(x = 'Annee', y = 'First_Person', kind = 'bar', figsize = (12,4))
+    plt.xlabel('Année')
+    plt.ylabel("Pourcentage de l'utilisation de la première personne sur tous les pronoms")
+    plt.title("Evolution de l'utilisation de la première personne dans les éloges sur tous les pronoms")
     return fst_pers
 
                                             
@@ -165,7 +169,7 @@ def project_back(df, name_col = 'tags', past = ['VER:subi', 'VER:simp', 'VER:ppe
         
 
     
-def past_tense(df, name_col = 'Eloge'):
+def past_tense(df, years_not, name_col = 'Eloge'):
     '''
     This method adds a column containing the percentage of verbs at the past tense to the dataframe and plots a hist of it through 
     the years
@@ -181,12 +185,18 @@ def past_tense(df, name_col = 'Eloge'):
     project_back(df)
     df['percent_past'] = df.apply(lambda row : 100*(row['verb_past']/(row['other_verb'] + row['verb_past'])), axis = 1)
     pst = df.groupby(['Annee']).agg({'percent_past' : 'mean'}).reset_index()
-    pst.plot(x = 'Annee', y = 'percent_past', kind = 'bar', figsize = (10,4), xlabel='Year', ylabel='Proportion on all verbs used')
-    plt.title('Evolution of the use of past tense verbs')
+    for year in years_not :
+        pst = pst.append({'Annee' : year, 'percent_past' : 0}, ignore_index=True)
+    pst.sort_values(by='Annee', inplace=True)
+    
+    pst.plot(x = 'Annee', y = 'percent_past', kind = 'bar', figsize = (12,4))
+    plt.ylabel("Pourcentage de l'utilisation des verbes au passé \nsur tous les verbes utilisés")
+    plt.title("Evolution de l'utilisation des verbes au passé")
+    plt.xlabel("Année")
     return pst
     
 
-def cond_imperative(df, name_col = 'Eloge') :
+def cond_imperative(df, years_not, name_col = 'Eloge') :
     '''
     This method plots both the proportion of conditional and imperative over the length of the eulogies.
     Inputs:
@@ -199,15 +209,21 @@ def cond_imperative(df, name_col = 'Eloge') :
         add_tags(df, name_col, 'tags')
     df['imp'] = df['tags'].apply(lambda x : sum([1 for elem in x if (len(elem)>1 and elem[1]== 'VER:impe')]))
     df['cond'] = df['tags'].apply(lambda x : sum([1 for elem in x if (len(elem)>1 and elem[1]== 'VER:cond')]))
-    df['imp'] = df.apply(lambda row : row['imp']/len(row[name_col]), axis = 1)
-    df['cond'] = df.apply(lambda row : row['cond']/len(row[name_col]), axis = 1)
+    df['verb'] = df['tags'].apply(lambda x : sum([1 for elem in x if (len(elem)>1 and elem[1].startswith('VER'))]))
+    df['imp'] = df.apply(lambda row : row['imp']/row['verb'], axis=1)
+    df['cond'] = df.apply(lambda row : row['cond']/row['verb'], axis=1)
     pci = df.groupby(['Annee']).agg({'imp' : 'mean', 'cond' : 'mean'}).reset_index()
-    fig, ax = plt.subplots(nrows=2, ncols=1, figsize = (10,8.5))
-    pci.plot(x='Annee', y='imp', kind ='bar', ax = ax[0], title = 'Use of the imperative throughout the years normed by the length of the eulogy')
-    ax[0].set_xlabel('Year')
-    pci.plot(x='Annee', y = 'cond', kind = 'bar', ax=ax[1], title = 'Use of the conditionnal throughout the years normed by the length of the eulogy')
-    ax[1].set_xlabel('Year')
-    plt.subplots_adjust(hspace = 0.5)
+    for year in years_not :
+        pci = pci.append({'Annee' : year, 'imp' : 0, 'cond' : 0}, ignore_index=True)
+    pci.sort_values(by='Annee', inplace=True)
+    fig, ax = plt.subplots(nrows=2, ncols=1, figsize = (12,8.5))
+    pci.plot(x='Annee', y='imp', kind ='bar', ax = ax[0], title = "Proportion de l'utilisation de l'impératif au cours du temps par rapport à tous les verbes employés")
+    ax[0].set_xlabel('Année')
+    pci.plot(x='Annee', y = 'cond', kind = 'bar', ax=ax[1], title = "Proportion de l'utilisation du contionnel au cours du temps par rapport à tous les verbes employés")
+    ax[1].set_xlabel('Année')
+    ax[0].set_ylabel("Pourcentage de l'utilisation des verbes à l'impératif \nsur tous les verbes")
+    ax[1].set_ylabel("Pourcentage de l'utilisation des verbes au conditionnel \nsur tous les verbes")
+    plt.subplots_adjust(hspace = 0.8)
     return pci
                                           
         
@@ -224,7 +240,7 @@ def nbr_eulogies(df, name, name_col = 'Annee', fig_size = (10,4)):
     '''
     bins = max(df[name_col])-min(df[name_col])
     df[name_col].hist(bins = bins, figsize = fig_size, xrot = 90)
-    plt.title('Number of eulogies published by year by ' + name)
+    plt.title("Nombre d'éloges par année publiés par " + name)
     
     
     
@@ -243,7 +259,9 @@ def nbr_character(df, name_col = 'Eloge', evol = False, year = 'Annee'):
     '''
     if not evol :
         df['Eloge'].str.len().hist()
-        plt.title('Number of characters per eulogy')
+        plt.title('Nombre de caractères par éloge')
+        plt.xlabel('Nombre de caractères')
+        plt.ylabel("Nombre d'éloges")
     else :
         df_help = df.copy()
         df_help['Number of characters'] = df_help['Eloge'].apply(lambda x : len(str(x)))
@@ -252,13 +270,14 @@ def nbr_character(df, name_col = 'Eloge', evol = False, year = 'Annee'):
         nbr_of_years = max(df_help.Annee)-min(df_help.Annee)
 
         nbr_charac.plot(x= 'Annee', y = 'Number of characters', kind = 'bar')
-        plt.xlabel('Annee')
-        plt.title('Evolution of number of characters through the years')
+        plt.xlabel('Année')
+        plt.ylabel('Nombre moyen de caractères par année')
+        plt.title("Evolution du nombre moyen de caractères utilisés par année")
         return nbr_charac
         
         
         
-def nbr_words(df, name_col = 'Eloge', evol = False, year = 'Annee'):
+def nbr_words(df, years_not, name_col = 'Eloge', evol = False, year = 'Annee'):
     '''
     This method aims at showing the number of words per eulogy
     Inputs:
@@ -273,23 +292,26 @@ def nbr_words(df, name_col = 'Eloge', evol = False, year = 'Annee'):
     
     if not evol:
         df[name_col].str.split().map(lambda x : len(x)).hist()
-        plt.title('Number of words per eulogies')
-        plt.xlabel('Number of words')
-        plt.ylabel('Number of eulogies')
+        plt.title('Nombre de mots par éloge')
+        plt.xlabel('Nombre de mots')
+        plt.ylabel("Nombre d'éloges")
     else :
         df_help = df.copy()
         df_help['Number of words'] = df_help['Eloge'].apply(lambda x : len(x.split()))
 
         nbr_words = df_help.groupby(['Annee']).agg({'Number of words' : 'mean'}).reset_index()
-
-        nbr_words.plot(x = 'Annee', y = 'Number of words', kind = 'bar', figsize = (10,4))
-        plt.xlabel('Year')
-        plt.title('Evolution of the average number of words per eulogy through the years')
+        for y in years_not:
+            nbr_words = nbr_words.append({'Annee' : y, 'Number of words' : 0}, ignore_index=True)
+        nbr_words.sort_values(by='Annee', inplace=True)
+        nbr_words.plot(x = 'Annee', y = 'Number of words', kind = 'bar', figsize = (12,4))
+        plt.xlabel('Année')
+        plt.ylabel('Nombre de mots')
+        plt.title("Evolution du nombre moyen de mots utilisés par éloge au cours des année")
         return nbr_words
         
         
         
-def avg_word_length(df, name_col = 'Eloge', evol = False, year = 'Annee'):
+def avg_word_length(df, years_not, name_col = 'Eloge', evol = False, year = 'Annee'):
     '''
     This method aims at showing the average length of wordper eulogy
     Inputs:
@@ -303,16 +325,20 @@ def avg_word_length(df, name_col = 'Eloge', evol = False, year = 'Annee'):
     '''
     if not evol :
         df[name_col].str.split().apply(lambda x : [len(i) for i in x]).map(lambda x : np.mean(x)).hist()
-        plt.title('Average word length in the eulogies')
+        plt.title("Longueur moyenne des mots par éloge")
+        plt.xlabel("Longueur moyenne des mots")
+        plt.ylabel("Nombre d'éloges")
     else :
         df_help = df.copy()
         df_help['Avg Word Length'] = df_help['Eloge'].apply(lambda x : statistics.mean([len(i) for i in x.split()]))
         avg_word = df_help.groupby(['Annee']).agg({'Avg Word Length' : 'mean'}).reset_index()
-
-        avg_word.plot('Annee', 'Avg Word Length', kind = 'bar', figsize = (10,4))
-        plt.xlabel('Year')
-
-        plt.title('Evolution of the average word length')
+        for year in years_not :
+            avg_word = avg_word.append({'Annee' : year, 'Avg Word Length' : 0}, ignore_index=True)
+        avg_word.sort_values(by='Annee', inplace=True)
+        avg_word.plot('Annee', 'Avg Word Length', kind = 'bar', figsize = (12,4))
+        plt.xlabel('Année')
+        plt.ylabel('Longueur moyenne des mots')
+        plt.title("Evolution de la longueur moyenne des mots dans les éloges au fil des années")
         return avg_word
         
         
@@ -337,7 +363,7 @@ def avg_sentence_len(text):
     return average_sentence_length #returning avg length of sentence
 
 
-def avg_sentence(df, name_col = 'Eloge', evol = False, year = 'Annee'):
+def avg_sentence(df, years_not, name_col = 'Eloge', evol = False, year = 'Annee'):
     '''
     This method aims at observing the average sentence length in the eulogies and plots a hist
     Inputs:
@@ -352,15 +378,21 @@ def avg_sentence(df, name_col = 'Eloge', evol = False, year = 'Annee'):
     df_help = df.copy()
     if not evol :
         df_help[name_col].apply(lambda x : avg_sentence_len(x)).hist()
-        plt.title('Average length of the sentences in the eulogies')
+        plt.title("Longueur moyenne des phrases dans les éloges")
+        plt.xlabel('Longueur moyenne des phrases')
+        plt.ylabel("Nombre d'éloges")
     else :
         df_help['Avg Sent Length'] = df_help['Eloge'].apply(lambda x : avg_sentence_len(x))
 
         avg_sent = df_help.groupby(['Annee']).agg({'Avg Sent Length' : 'mean'}).reset_index()
+        for year in years_not :
+            avg_sent = avg_sent.append({'Annee' : year, 'Avg Sent Length' : 0}, ignore_index=True)
+        avg_sent.sort_values(by='Annee', inplace=True)
 
-        avg_sent.plot('Annee', 'Avg Sent Length', kind = 'bar', figsize = (10,4))
-        plt.title('Evolution of the sentence length through the years')
-        plt.xlabel('Year')
+        avg_sent.plot('Annee', 'Avg Sent Length', kind = 'bar', figsize = (12,4))
+        plt.title("Evolution de la longueur des phrases au cours du temps")
+        plt.xlabel("Année")
+        plt.ylabel("Longueur moyenne des phrases")
         return avg_sent
     
     
@@ -431,7 +463,7 @@ def count_adverbs(df, name_col = 'Eloge'):
     return df_ret, df_help
 
 
-def proper_name(df, name_col = 'Eloge', norm = False):
+def proper_name(df, years_not, name_col = 'Eloge', norm = False):
     '''
     This methods' aim is to study the appearance of proper names throughout the eulogies
     Inputs:
@@ -447,11 +479,19 @@ def proper_name(df, name_col = 'Eloge', norm = False):
     else :
         df['p_name'] = df.apply(lambda x : sum([1 for elem in x['tags'] if len(elem)>1 and elem[1]=='NAM']), axis = 1)
     p_n = df.groupby('Annee').agg({'p_name' : 'mean'}).reset_index()
-    p_n.plot(x = 'Annee', y = 'p_name', kind = 'bar', figsize = (10,4), xlabel='Year')
+    for year in years_not :
+        p_n = p_n.append({'Annee' : year, 'p_name' : 0}, ignore_index=True)
+    p_n.sort_values(by='Annee', inplace=True)
+    p_n.plot(x = 'Annee', y = 'p_name', kind = 'bar', figsize = (12,4), xlabel='Year')
+    
     if norm :
-        plt.title('Evolution of the use of proper names normed by the number of words per eulogy')
+        plt.title("Evolution de l'utilisation des noms propres au cours du temps")
+        plt.xlabel("Année")
+        plt.ylabel("Utilisation moyenne de noms propres")
     else :
-        plt.title('Evolution of the use of proper names')
+        plt.title("Utilisation des noms propres")
+        plt.xlabel("Nombre de noms propres")
+        plt.ylabel("Nombre d'éloges")
     return p_n
                             
                                

@@ -1,6 +1,6 @@
 #https://stackoverflow.com/questions/52946332/how-to-print-specific-words-in-colour-on-python#
 def get_rep_adv(df, df_sent, df_adv, adverb = 'environ',categorie='Assertivité',  name_col = 'Eloge', 
-                adv = None, BOLD = '\033[1m', END = '\033[0m'):
+                adv = None, BOLD = '\033[1m', END = '\033[0m', print_=True):
     '''
         This method prints six sentences from different eulogies, three before the Revolution, three after. Those sentences   are    
         considered the most representative of the adverb. We take the three eulogies that contain the most adverbs of the same 
@@ -15,6 +15,11 @@ def get_rep_adv(df, df_sent, df_adv, adverb = 'environ',categorie='Assertivité'
             - adv (string) : by default to None, else name of the column that contains the list of adverbs for each eulogy
             - BOLD (string) : code of the bold to print, by default to '\033[1m'
             - END (string) : code of the reset to print, by default to '\033[0m'
+            - print_ (boolean) : by default to True, whether to print or no the sentences
+        Outputs :
+            - list_pre (list) : list containing the sentences before the Revolution
+            - list_post (list) : list containing the sentences after the Revolution
+          
     '''
     
     
@@ -52,7 +57,9 @@ def get_rep_adv(df, df_sent, df_adv, adverb = 'environ',categorie='Assertivité'
     counter = 0
     #keeps track of the index in the dataframe
     idx = 0
-    print("\u0332".join('Pre-Revolution : '))
+    list_pre = []
+    if print_:
+        print("\u0332".join('Pre-Revolution : '))
     while counter < 3  and idx<df_pre.shape[0]:
         #if we still haven't found three sentences with the adverb and aren't at the end of the dataframe
         if adverb in df_pre['aux'][idx]:
@@ -71,7 +78,9 @@ def get_rep_adv(df, df_sent, df_adv, adverb = 'environ',categorie='Assertivité'
                 utterances[i] = BOLD + utterances[i] + END
             # join the list back into a string and print
             utterances = " ".join(utterances)
-            print(utterances)
+            if print_:
+                print(utterances)
+            list_pre.append(df_aux['Eloge'][0])
 
         idx+=1
     
@@ -80,7 +89,9 @@ def get_rep_adv(df, df_sent, df_adv, adverb = 'environ',categorie='Assertivité'
     counter = 0
     #keeps track of the index in the dataframe
     idx = 0
-    print("\u0332".join('Post-Revolution : '))
+    list_post = []
+    if print_:
+        print("\u0332".join('Post-Revolution : '))
     while counter < 3  and idx<df_post.shape[0]:
         #if we still haven't found three sentences with the adverb and aren't at the end of the dataframe
         if adverb in df_post['aux'][idx]:
@@ -98,5 +109,9 @@ def get_rep_adv(df, df_sent, df_adv, adverb = 'environ',categorie='Assertivité'
                 utterances[i] = BOLD + utterances[i] + END
             # join the list back into a string and print
             utterances = " ".join(utterances)
-            print(utterances)
+            if print_:
+                print(utterances)
+            list_post.append(df_aux['Eloge'][0])
         idx+=1
+        
+    return list_pre, list_post

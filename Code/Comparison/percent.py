@@ -42,6 +42,11 @@ def rmv_sent(df_try):
     
 def create_dict_perc(df_try):
     '''
+    This method creates a dictionnary with the topics contained in each part of the text and returns it
+    Input:
+        - df_try (DataFrame) : dataframe to split into part of text
+    Output:
+        - dic_perc (dict) : dictionnary containing as keys the part of text, and as values the number of mentions of each topic
     '''
     dic_perc = {'0-10' : {}, '10-20' : {}, '20-30' : {}, '30-40' : {}, '40-50' : {}, '50-60' : {}, '60-70' : {},
            '70-80' : {}, '80-90' : {}, '90-100' : {}}
@@ -91,8 +96,8 @@ def divide_by_percent(ls):
 
 
 
-def plot_stack_bar(df, name_col = 'Topic_Ordered', date = 1793, color_plot = {'outlier' : 'grey', 'science' : 'red', 'personne' : 'pink', 'societe' : 'orange' ,
-             'posterite' : 'purple', 'theorie' : 'black', 'voyage' : 'grey'}, keep_outliers = False, norm = False, norm_by_tot = False):
+def plot_stack_bar(df, name_col = 'Topic_Ordered', date = 1793, color_plot = {'outlier' : 'grey', 'Sciences' : 'red', 'Personne' : 'pink', 'Société' : 'orange' ,
+             'Postérité' : 'purple', 'Méthode' : 'black', 'Voyage' : 'grey'}, keep_outliers = False, norm = False, norm_by_tot = False):
     
     '''
     This method plots stack bars of proportion of each category of topic by percentage of text
@@ -136,13 +141,13 @@ def plot_stack_bar(df, name_col = 'Topic_Ordered', date = 1793, color_plot = {'o
     perc = pd.DataFrame(dic_perc.values())
     perc_pre = pd.DataFrame(dic_perc_pre.values())
     perc_post = pd.DataFrame(dic_perc_post.values())
-    title='Amount of each topic by part of the text'
+    title="Nombre de mentions des topics par partie du texte"
     
     if norm :
         perc.loc[:,:] = perc.loc[:,:].div(perc.sum(axis=1), axis=0)
         perc_pre.loc[:,:] = perc_pre.loc[:,:].div(perc_pre.sum(axis=1), axis=0)
         perc_post.loc[:,:] = perc_post.loc[:,:].div(perc_post.sum(axis=1), axis=0)
-        title='Proportion of each topic by part of the text normed by all topics in this part'
+        title="Proportion de chaque topic par rapport à tous les topics utilisés dans cette partie"
         for col in perc.columns:
             perc[col] = 100*perc[col]
             perc_pre[col] = 100*perc_pre[col]
@@ -155,11 +160,14 @@ def plot_stack_bar(df, name_col = 'Topic_Ordered', date = 1793, color_plot = {'o
         
              
     if norm_by_tot :
-        title = 'Proportion of a topic by part of the text divided by the use of this topic throughout the entire text' 
+        title = "Proportion de chaque topic dans chaque partie par rapport à l'utilisation totale de ce topic"
         for col in perc.columns:
             perc[col] = perc[col]/perc[col].sum()
             perc_pre[col] = perc_pre[col]/perc_pre[col].sum()
             perc_post[col] = perc_post[col]/perc_post[col].sum()
+            perc[col] = 100*perc[col]
+            perc_pre[col] = 100*perc_pre[col]
+            perc_post[col] = 100*perc_post[col]
 
     
     perc['Percent'] =['0-10', '10-20','20-30', '30-40','40-50', '50-60','60-70', '70-80',
@@ -175,18 +183,18 @@ def plot_stack_bar(df, name_col = 'Topic_Ordered', date = 1793, color_plot = {'o
     
     fig, ax = plt.subplots(nrows = 3, figsize = (10, 15))
     perc.plot.bar(x='Percent', stacked=True, title=title,
-             color = color_plot, ax = ax[0], ylabel = 'Proportions', xlabel = 'Part in the text')
+             color = color_plot, ax = ax[0], ylabel = 'Proportions (en%)', xlabel = "Partie de l'éloge")
     perc_pre.plot.bar(x='Percent', stacked=True, title=title +' pre Revolution',
-                 color = color_plot, ax = ax[1], ylabel = 'Proportions', xlabel = 'Part in the text')
+                 color = color_plot, ax = ax[1], ylabel = 'Proportions (en%)', xlabel = "Partie de l'éloge")
     perc_post.plot.bar(x='Percent', stacked=True, title=title+' post Revolution',
-                  color=color_plot, ax = ax[2], ylabel = 'Proportions', xlabel = 'Part in the text')
+                  color=color_plot, ax = ax[2], ylabel = 'Proportions (en%)', xlabel = "Partie de l'éloge")
     
     plt.subplots_adjust(hspace = 0.4)
     handles, labels = ax[0].get_legend_handles_labels()
     ax[0].get_legend().remove()
     ax[1].get_legend().remove()
     ax[2].get_legend().remove()
-    fig.legend(handles, labels, bbox_to_anchor=(1.3, 0.5))
+    fig.legend(handles, labels, bbox_to_anchor=(1.5, 0.5))
     return perc, perc_pre, perc_post
 
 
@@ -195,7 +203,7 @@ def sent_rep(topic, df_rep, print_ = True, perc=10):
     This method aims at outputing the most representative sentences of a topic
     Inputs :
         - topic (int) : number of the topic
-        - df_rep(DataFrame) : TODO
+        - df_rep(DataFrame) : dataframe containing sentences their first topic and probabilities
         - print_ (boolean) : Whether to print the sentences by default to True
         - perc (int) : Number of sentences to output, by default to 10
     Outputs :
@@ -209,3 +217,151 @@ def sent_rep(topic, df_rep, print_ = True, perc=10):
             print(row['Eloge'])
             print('\n')
     return df_help
+
+
+def get_rep_aux_topic(df, topic,  perc=3, print_=True, scd=True):
+    '''
+    This method gets the most representative sentences for the second and third topic inside a topic
+    Inputs:
+        - df (DataFrame) : dataframe containing sentences information about first, second and third topics and their probabilities
+        - topic (int) : topic we want to study
+        - perc (int) : number of sentences to print, by default to 3
+        - print_ (Boolean) : by default to True, to print or not the most representative sentences
+        - scd (Boolean) : by default set to True, if True prints phrases about the second topic, to False about the third one
+    Output:
+        - df_help (DataFrame) : dataframe containing the most representative sentences for second or third topic
+    '''
+    if scd :
+        string='Second topic '
+        name_col = 'Scd_Topic'
+        prob_col = 'Scd_Prob'
+    else :
+        string = 'Third topic '
+        name_col = 'Third_Topic'
+        prob_col = 'Third_Prob'
+        
+    df_aux = df[df['Topic']==topic]
+    scd_top = df_aux[name_col].unique()
+    for top in scd_top:
+        print("\u0332".join(string + str(top) +' :'))
+        df_help = df_aux[df_aux[name_col]==top].sample(frac=1).nlargest(n=perc, keep='first', columns = prob_col)
+        if print_:
+            for _,row in df_help.iterrows():
+                print(row['Eloge'])
+                print('\n')
+    return df_help
+
+
+
+
+#from https://github.com/MaartenGr/BERTopic/blob/master/bertopic/plotting/_topics_over_time.py
+
+import pandas as pd
+from typing import List
+import plotly.graph_objects as go
+from sklearn.preprocessing import normalize
+
+#This method reuses the one implemented by MaartenGr for BERTopic but adds the posssibility to change the title or the 
+#name of the axis
+
+def visualize_topics_over_time(topic_model,
+                               topics_over_time: pd.DataFrame,
+                               top_n_topics: int = None,
+                               topics: List[int] = None,
+                               normalize_frequency: bool = False,
+                               width: int = 1250,
+                               height: int = 450, 
+                               title='Topics Au cours du Temps', 
+                               yaxis="Nombre de topics divisé par le nombre d'éloges",
+                              xaxis="Année") -> go.Figure:
+    """ Visualize topics over time
+    Arguments:
+        topic_model: A fitted BERTopic instance.
+        topics_over_time: The topics you would like to be visualized with the
+                          corresponding topic representation
+        top_n_topics: To visualize the most frequent topics instead of all
+        topics: Select which topics you would like to be visualized
+        normalize_frequency: Whether to normalize each topic's frequency individually
+        width: The width of the figure.
+        height: The height of the figure.
+        title: The title of the plot.
+        yaxis : The title of the yaxis
+        xaxis : The title of the xaxis
+    Returns:
+        A plotly.graph_objects.Figure including all traces
+    Usage:
+    To visualize the topics over time, simply run:
+    ```python
+    topics_over_time = topic_model.topics_over_time(docs, topics, timestamps)
+    topic_model.visualize_topics_over_time(topics_over_time)
+    ```
+    Or if you want to save the resulting figure:
+    ```python
+    fig = topic_model.visualize_topics_over_time(topics_over_time)
+    fig.write_html("path/to/file.html")
+    ```
+    <iframe src="../../getting_started/visualization/trump.html"
+    style="width:1000px; height: 680px; border: 0px;""></iframe>
+    """
+    colors = ["#E69F00", "#56B4E9", "#009E73", "#F0E442", "#D55E00", "#0072B2", "#CC79A7"]
+
+    # Select topics
+    if topics:
+        selected_topics = topics
+    elif top_n_topics:
+        selected_topics = topic_model.get_topic_freq().head(top_n_topics + 1)[1:].Topic.values
+    else:
+        selected_topics = topic_model.get_topic_freq().Topic.values
+
+    # Prepare data
+    topic_names = {key: value[:40] + "..." if len(value) > 40 else value
+                   for key, value in topic_model.topic_names.items()}
+    topics_over_time["Name"] = topics_over_time.Topic.map(topic_names)
+    data = topics_over_time.loc[topics_over_time.Topic.isin(selected_topics), :]
+
+    # Add traces
+    fig = go.Figure()
+    for index, topic in enumerate(data.Topic.unique()):
+        trace_data = data.loc[data.Topic == topic, :]
+        topic_name = trace_data.Name.values[0]
+        words = trace_data.Words.values
+        if normalize_frequency:
+            y = normalize(trace_data.Frequency.values.reshape(1, -1))[0]
+        else:
+            y = trace_data.Frequency
+        fig.add_trace(go.Scatter(x=trace_data.Timestamp, y=y,
+                                 mode='lines',
+                                 marker_color=colors[index % 7],
+                                 hoverinfo="text",
+                                 name=topic_name,
+                                 hovertext=[f'<b>Topic {topic}</b><br>Words: {word}' for word in words]))
+
+    # Styling of the visualization
+    fig.update_xaxes(showgrid=True)
+    fig.update_yaxes(showgrid=True)
+    fig.update_layout(
+        yaxis_title=yaxis,
+        xaxis_title=xaxis,
+        title={
+            'text': "<b>" + title,
+            'y': .95,
+            'x': 0.40,
+            'xanchor': 'center',
+            'yanchor': 'top',
+            'font': dict(
+                size=22,
+                color="Black")
+        },
+        template="simple_white",
+        width=width,
+        height=height,
+        hoverlabel=dict(
+            bgcolor="white",
+            font_size=16,
+            font_family="Rockwell"
+        ),
+        legend=dict(
+            title="<b>Global Topic Representation",
+        )
+    )
+    return fig
